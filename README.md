@@ -19,5 +19,11 @@ STEP BY STEP:
 8) Machine learning model
 9) Backtest and predict
 
+
+
+
 1) 2020, 2016, 2012
 2) TheNewYorkTimes, CNN, FOX News, Washington Post, Politicos, FiveThirtyEight, TheHill, RealClearPolitics, Breitbart for conservative perspectives and Daily Kos for liberal viewpoints, Reddit: Subreddits like r/politics, r/PoliticalDiscussion, and election-specific forums can be goldmines of public opinion and discussion, Twitter: Use hashtags related to the elections (e.g., #Election2020, #Trump2020, #Biden2020) (Or Twitter's Advanced Search), FB, YT, Pew Research Center and the Brookings Institution often conduct in-depth analysis and surveys on voter behavior and election trends, For older articles or content that has been removed, the Wayback Machine can help you access archived versions of web pages, 
+
+First, start with "keywords", or frequently used phrases
+Start with broad keywords, and then start narrowing down.
