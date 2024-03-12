@@ -27,3 +27,5 @@ STEP BY STEP:
 
 First, start with "keywords", or frequently used phrases
 Start with broad keywords, and then start narrowing down.
+
+Keywords: Trump, Biden, Election, Win, Beat, Better, 
