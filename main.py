@@ -39,7 +39,7 @@ url = f'https://api.nytimes.com/svc/search/v2/articlesearch.json?q={keyword}&beg
 response = requests.get(url)
 
 if response.status_code == 200:
-    articles = response.json()
+    articles = response.json()\
     
     # Iterate over articles in the response
     for doc in articles['response']['docs']:
