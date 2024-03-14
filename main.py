@@ -4,7 +4,7 @@ import webbrowser
 api_key = '1ffP4T6741HAX9gA7xVs2XkY6aYX79wH'
 # Combine keywords with "OR" for the query
 keywords = 'Trump OR Biden OR Election OR Win OR Beat OR Better'
-begin_date = '20200101'  # Example start date: January 1, 2020
+begin_date = '201901001'  # Example start date: January 1, 2020
 end_date = '20201231'    # Example end date: December 31, 2020
 
 print("Searching for articles with keywords: ", keywords)
@@ -19,7 +19,7 @@ if response.status_code == 200:
     
     # Set a limit to how many URLs to open to avoid overwhelming the browser
     open_limit = 5
-    opened_count = 0
+    opened_count = 10
 
     # Iterate over articles in the response
     for doc in articles['response']['docs']:
