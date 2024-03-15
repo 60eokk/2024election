@@ -30,3 +30,5 @@ Start with broad keywords, and then start narrowing down.
 
 Keywords: Trump, Biden, Election, Win, Beat, Better, 
 NEED TO SORT OUT THE RESULTS!, IT IS NOT ORGANIZED
+
+Should I start making changes to this code to do more? or should I start making the same function for other websites?
