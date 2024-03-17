@@ -1,37 +1,36 @@
 import requests
-import webbrowser
+import json
 
+# Feature 5: Interactive User Input
+keywords = input("Enter keywords separated by 'OR': ")
+begin_date = input("Enter start date (YYYYMMDD): ")
+end_date = input("Enter end date (YYYYMMDD): ")
 api_key = '1ffP4T6741HAX9gA7xVs2XkY6aYX79wH'
-# Combine keywords with "OR" for the query
-keywords = 'Trump OR Biden OR Election OR Win OR Beat OR Better'
-begin_date = '201901001'  # Example start date: January 1, 2020
-end_date = '20201231'    # Example end date: December 31, 2020
 
 print("Searching for articles with keywords: ", keywords)
 
 # Constructing the URL with date range and combined keywords
 url = f'https://api.nytimes.com/svc/search/v2/articlesearch.json?q={keywords}&begin_date={begin_date}&end_date={end_date}&api-key={api_key}'
 
-response = requests.get(url)
-
-if response.status_code == 200:
+try:
+    response = requests.get(url)
+    
+    # Feature 3: Error Handling
+    response.raise_for_status()  # This will raise an exception for HTTP errors
+    
     articles = response.json()
     
-    # Set a limit to how many URLs to open to avoid overwhelming the browser
-    open_limit = 5
-    opened_count = 10
-
-    # Iterate over articles in the response
+    # Feature 4: Saving Results to File
+    with open('articles.json', 'w') as f:
+        json.dump(articles, f, indent=4)
+    
+    # Process the articles
     for doc in articles['response']['docs']:
         headline = doc['headline']['main']
         article_url = doc['web_url']
         print(f"Title: {headline}\nURL: {article_url}\n")
-        
-        # Automatically open the article URL in the default browser, with a limit
-        if opened_count < open_limit:
-            webbrowser.open(article_url)
-            opened_count += 1
-else:
-    print(f"Failed to fetch articles. Status Code: {response.status_code}")
-    print("Response:", response.text)
 
+except requests.exceptions.HTTPError as http_err:
+    print(f"HTTP error occurred: {http_err}")
+except Exception as err:
+    print(f"An error occurred: {err}")
