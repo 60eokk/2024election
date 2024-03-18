@@ -32,3 +32,6 @@ Keywords: Trump, Biden, Election, Win, Beat, Better,
 NEED TO SORT OUT THE RESULTS!, IT IS NOT ORGANIZED
 
 Should I start making changes to this code to do more? or should I start making the same function for other websites?
+
+# NEW METHOD!
+instead of choosing the keywords by myself, I will check for all the keywords in the article related to presidents and then from there, list the keywords (most used) from top to bottom. THIS will be the keyword to election winner!
