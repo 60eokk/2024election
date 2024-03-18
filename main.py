@@ -1,5 +1,19 @@
 import requests
 import json
+from collections import Counter
+import re
+
+def count_words(text):
+    # Remove punctuation and split text into words
+    words = re.findall(r'\b\w+\b', text.lower())
+    # Count each word
+    word_counts = Counter(words)
+    # Return the most common words and their counts
+    return word_counts.most_common()
+
+
+
+
 
 # Feature 5: Interactive User Input
 keywords = input("Enter keywords separated by 'OR': ")
@@ -24,11 +38,21 @@ try:
     with open('articles.json', 'w') as f:
         json.dump(articles, f, indent=4)
     
-    # Process the articles
-    for doc in articles['response']['docs']:
+    # Process the articles and count words in snippets
+    for i, doc in enumerate(articles['response']['docs']):
         headline = doc['headline']['main']
         article_url = doc['web_url']
         print(f"Title: {headline}\nURL: {article_url}\n")
+        
+        # Use snippet as example text; replace with full text if available
+        text = doc.get('snippet', '')
+        if text:
+            word_rankings = count_words(text)
+            # Save word rankings to a separate file for each article
+            ranking_filename = f'word_ranking_{i}.json'
+            with open(ranking_filename, 'w') as f:
+                json.dump(word_rankings, f, indent=4)
+            print(f"Word rankings saved to {ranking_filename}")
 
 except requests.exceptions.HTTPError as http_err:
     print(f"HTTP error occurred: {http_err}")
