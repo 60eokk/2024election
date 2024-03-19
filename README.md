@@ -35,3 +35,6 @@ Should I start making changes to this code to do more? or should I start making 
 
 # NEW METHOD!
 instead of choosing the keywords by myself, I will check for all the keywords in the article related to presidents and then from there, list the keywords (most used) from top to bottom. THIS will be the keyword to election winner!
+
+# RAN INTO MAJOR PROBLEM:
+apparently, scraping data from sources like New York Times are is against policy... need to find another source!
