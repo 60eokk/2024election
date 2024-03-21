@@ -60,5 +60,6 @@ except Exception as err:
     print(f"An error occurred: {err}")
 
 
-# FUTURE REFERENCE URL
-# https://www.270towin.com/historical-presidential-elections/
+# TWO DOCUMENTATION PAGES
+#https://api.ap.org/media/v/docs/#t=Pricing.htm
+# https://bloomberg.github.io/blpapi-docs/python/3.23/
