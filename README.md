@@ -51,3 +51,8 @@ apparently, scraping data from sources like New York Times are is against policy
 Other websites, for exameple: https://en.wikipedia.org/wiki/List_of_news_media_APIs
 https://www.govtrack.us/
 https://www.presidency.ucsb.edu/advanced-search?field-keywords=donald+trump&field-keywords2=&field-keywords3=&from%5Bdate%5D=&to%5Bdate%5D=&person2=&items_per_page=25
+
+
+# ANOTHER PROBLEM:
+NEWSAPI's free plan only gives 1 month old articles.
+
