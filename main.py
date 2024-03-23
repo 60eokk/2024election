@@ -7,7 +7,9 @@ import re
 import json
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime  
+
+# Define a list of common English words to exclude
+stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with"])
 
 def count_words(text):
     words = re.findall(r'\b\w+\b', text.lower())
@@ -15,9 +17,9 @@ def count_words(text):
     return word_counts.most_common()
 
 def fetch_article_text(url):
-    headers = {'User-Agent': 'Mozilla/5.0'}  # Adding a User-Agent header
+    headers = {'User-Agent': 'Mozilla/5.0'}
     try:
-        response = requests.get(url, headers=headers, timeout=10)  # Added timeout
+        response = requests.get(url, headers=headers, timeout=10)
         if response.status_code == 200:
             soup = BeautifulSoup(response.content, 'html.parser')
             paragraphs = soup.find_all('p')
@@ -27,7 +29,7 @@ def fetch_article_text(url):
             print(f"Failed to fetch the article: HTTP {response.status_code}")
             return ""
     except Exception as e:
-        print(f"An error occurred while fetching the article: {e}")
+        print(f"An error occurred: {e}")
         return ""
 
 def main():
@@ -35,37 +37,44 @@ def main():
     api = NewsApiClient(api_key=api_key)
     keyword = 'Trump'
 
-    # Set time range
-    from_date = '2020-01-01'
-    to_date = '2020-12-31'
+    articles = api.get_everything(q=keyword, language='en')
+    all_original_rankings = []
+    all_filtered_rankings = []
 
-    # Added language parameter to filter for English articles
-    articles = api.get_everything(q=keyword, 
-                                  from_param=from_date, 
-                                  to=to_date,
-                                  language='en',  # Assuming you want articles in English
-                                  sort_by='relevancy')
-    all_rankings = []
-
-    for article in articles['articles']:
+    for index, article in enumerate(articles['articles'], start=1):
         url = article['url']
         title = article['title']
         print(f"Processing article: {title}")
         
         article_text = fetch_article_text(url)
         ranked_words = count_words(article_text)
-
-        all_rankings.append({
+        
+        # Keep original rankings
+        all_original_rankings.append({
             'title': title,
             'url': url,
-            'word_rankings': ranked_words[:10]  # Consider limiting this if the output is too verbose
+            'word_rankings': ranked_words[:10]
         })
 
-    filename = f'word_rankings_for_{keyword}.json'
-    with open(filename, 'w') as f:
-        json.dump(all_rankings, f, indent=4)
+        # Filter out stop words for the new rankings
+        filtered_rankings = [(word, count) for word, count in ranked_words if word not in stop_words][:10]
+        formatted_filtered_rankings = f"Article {index}: {title}\nURL: {url}\nTop words:\n" + \
+                            '\n'.join([f"{i+1}: {word} ({count} times)" for i, (word, count) in enumerate(filtered_rankings)]) + \
+                            "\n\n"
+        all_filtered_rankings.append(formatted_filtered_rankings)
 
-    print(f"Word rankings for all articles related to '{keyword}' have been saved to {filename}.")
+    # Save original rankings to JSON file
+    with open(f'word_rankings_for_{keyword}.json', 'w') as f:
+        json.dump(all_original_rankings, f, indent=4)
+
+    # Save new filtered rankings to a separate text file
+    filtered_filename = f'filtered_word_rankings_for_{keyword}.txt'
+    with open(filtered_filename, 'w') as f:
+        for article_ranking in all_filtered_rankings:
+            f.write(article_ranking)
+
+    print(f"Original word rankings for all articles related to '{keyword}' have been saved to 'word_rankings_for_{keyword}.json'.")
+    print(f"Filtered word rankings for all articles related to '{keyword}' have been saved to '{filtered_filename}'.")
 
 if __name__ == "__main__":
     main()
