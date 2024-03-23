@@ -236,21 +236,7 @@ Top words:
 9: said (5 times)
 10: at (5 times)
 
-Article 18: Eric Trump's wife, Lara Trump, now co-chairs the RNC. Here's a timeline of their relationship.
-URL: https://www.businessinsider.com/eric-trump-lara-trump-relationship-timeline
-Top words:
-1: s (24 times)
-2: trump (22 times)
-3: lara (22 times)
-4: i (18 times)
-5: you (15 times)
-6: eric (14 times)
-7: an (12 times)
-8: she (11 times)
-9: we (11 times)
-10: as (10 times)
-
-Article 19: A Stormy Daniels documentary comes out Monday, and Trump's hush-money lawyers are already raging. Here's why.
+Article 18: A Stormy Daniels documentary comes out Monday, and Trump's hush-money lawyers are already raging. Here's why.
 URL: https://www.businessinsider.com/bombshells-in-stormy-documentary-have-trump-lawyers-raging-2024-3
 Top words:
 1: she (41 times)
@@ -263,6 +249,20 @@ Top words:
 8: it (14 times)
 9: film (13 times)
 10: says (12 times)
+
+Article 19: Eric Trump's wife, Lara Trump, now co-chairs the RNC. Here's a timeline of their relationship.
+URL: https://www.businessinsider.com/eric-trump-lara-trump-relationship-timeline
+Top words:
+1: s (24 times)
+2: trump (22 times)
+3: lara (22 times)
+4: i (18 times)
+5: you (15 times)
+6: eric (14 times)
+7: an (12 times)
+8: she (11 times)
+9: we (11 times)
+10: as (10 times)
 
 Article 20: Haley's Out: Can Trump Win Her Supporters?
 URL: https://www.npr.org/2024/03/06/1198910635/haleys-out-can-trump-win-her-supporters
@@ -383,8 +383,8 @@ Top words:
 2: trump (8 times)
 3: as (8 times)
 4: tech (8 times)
-5: this (6 times)
-6: be (6 times)
+5: has (6 times)
+6: this (6 times)
 7: she (5 times)
 8: an (5 times)
 9: media (5 times)
@@ -1282,21 +1282,7 @@ Top words:
 9: money (6 times)
 10: or (6 times)
 
-Article 94: Here are Washington's 2024 presidential primary results
-URL: https://www.npr.org/2024/03/12/1237467823/washington-primary-election-results-2024
-Top words:
-1: getty (7 times)
-2: images (7 times)
-3: by (5 times)
-4: ap (3 times)
-5: president (2 times)
-6: biden (2 times)
-7: are (2 times)
-8: an (2 times)
-9: designed (2 times)
-10: developed (2 times)
-
-Article 95: Here are Georgia's 2024 presidential primary results
+Article 94: Here are Georgia's 2024 presidential primary results
 URL: https://www.npr.org/2024/03/12/1237445491/georgia-primary-election-results-2024
 Top words:
 1: getty (7 times)
@@ -1309,6 +1295,20 @@ Top words:
 8: developed (2 times)
 9: hilary (2 times)
 10: fung (2 times)
+
+Article 95: Here are Washington's 2024 presidential primary results
+URL: https://www.npr.org/2024/03/12/1237467823/washington-primary-election-results-2024
+Top words:
+1: getty (7 times)
+2: images (7 times)
+3: by (5 times)
+4: ap (3 times)
+5: president (2 times)
+6: biden (2 times)
+7: are (2 times)
+8: an (2 times)
+9: designed (2 times)
+10: developed (2 times)
 
 Article 96: Trump undoubtedly controls the GOP, but the TikTok vote shows Republicans won't always follow him in lockstep
 URL: https://www.businessinsider.com/tiktok-vote-shows-trumps-grip-on-the-gop-isnt-absolute-2024-3
@@ -1338,21 +1338,7 @@ Top words:
 9: hilary (2 times)
 10: fung (2 times)
 
-Article 98: A Trump vs Biden rematch is on, and it's a showdown most Americans didn't want
-URL: https://www.businessinsider.com/trump-biden-clinch-party-nominations-race-few-people-want-president-2024-3
-Top words:
-1: trump (14 times)
-2: biden (12 times)
-3: his (11 times)
-4: voters (5 times)
-5: democrats (5 times)
-6: s (5 times)
-7: who (5 times)
-8: us (5 times)
-9: was (5 times)
-10: t (5 times)
-
-Article 99: Trump confirms he met with Elon Musk, but they disagree about electric cars
+Article 98: Trump confirms he met with Elon Musk, but they disagree about electric cars
 URL: https://www.businessinsider.com/trump-disagrees-elon-musk-electric-cars-meeting-2024-3
 Top words:
 1: he (25 times)
@@ -1365,6 +1351,20 @@ Top words:
 8: t (6 times)
 9: s (6 times)
 10: president (5 times)
+
+Article 99: A Trump vs Biden rematch is on, and it's a showdown most Americans didn't want
+URL: https://www.businessinsider.com/trump-biden-clinch-party-nominations-race-few-people-want-president-2024-3
+Top words:
+1: trump (14 times)
+2: biden (12 times)
+3: his (11 times)
+4: voters (5 times)
+5: democrats (5 times)
+6: s (5 times)
+7: who (5 times)
+8: us (5 times)
+9: was (5 times)
+10: t (5 times)
 
 Article 100: Trump says banning TikTok would make Facebook — an 'enemy of the people' — stronger
 URL: https://www.businessinsider.com/trump-tiktok-ban-enemy-of-the-people-facebook-stronger-2024-3
