@@ -244,7 +244,16 @@ Top words:
 Article 19: [Removed]
 URL: https://removed.com
 Top words:
-
+1: sedo (3 times)
+2: or (3 times)
+3: by (2 times)
+4: domain (2 times)
+5: this (1 times)
+6: webpage (1 times)
+7: was (1 times)
+8: generated (1 times)
+9: owner (1 times)
+10: using (1 times)
 
 Article 20: Biden touts economic 'comeback' in election-year pitch to skeptical voters
 URL: https://www.npr.org/2024/03/07/1236248290/state-of-the-union-address-biden-economy
@@ -445,7 +454,16 @@ Top words:
 Article 34: [Removed]
 URL: https://removed.com
 Top words:
-
+1: sedo (3 times)
+2: or (3 times)
+3: by (2 times)
+4: domain (2 times)
+5: this (1 times)
+6: webpage (1 times)
+7: was (1 times)
+8: generated (1 times)
+9: owner (1 times)
+10: using (1 times)
 
 Article 35: The Transportation Department proposes new rules for how airlines handle wheelchairs
 URL: https://www.npr.org/2024/02/29/1234708784/airlines-wheelchairs-damaged-disabilities-transportation-department

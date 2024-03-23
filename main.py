@@ -7,6 +7,8 @@ import re
 import json
 import requests
 from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
+
 
 # Define a list of common English words to exclude
 stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with"])
@@ -31,6 +33,31 @@ def fetch_article_text(url):
     except Exception as e:
         print(f"An error occurred: {e}")
         return ""
+
+def read_top_aggregated_rankings(filename, top_n=10):
+    """Read aggregated rankings from a file and return the top N words and their total ranking sum."""
+    rankings = {}
+    with open(filename, 'r') as f:
+        for line in f.readlines()[:top_n]:  # Only read the top N lines
+            parts = line.split(':')
+            word = parts[0].strip()
+            total_ranking = int(parts[1].split()[0].strip("()"))  # Adjust based on your file format
+            rankings[word] = total_ranking
+    return rankings
+
+
+def plot_keyword_rankings(rankings, keyword):
+    """Plot a bar graph of the top word rankings for a given keyword."""
+    words = list(rankings.keys())
+    scores = list(rankings.values())
+    plt.figure(figsize=(10, 8))
+    plt.barh(words, scores, color='skyblue')
+    plt.xlabel('Total Aggregated Ranking')
+    plt.ylabel('Words')
+    plt.title(f'Top Word Rankings for {keyword}')
+    plt.gca().invert_yaxis()  # Invert y-axis to have the top ranking at the top
+    plt.show()
+
 
 def process_keyword(api_key, keyword):
     api = NewsApiClient(api_key=api_key)
@@ -81,9 +108,13 @@ def process_keyword(api_key, keyword):
 def main():
     api_key = '286057e277b5469db123953b0e0d0214'
     keywords = ['Trump', 'Biden']
+    total_rankings = []
 
     for keyword in keywords:
-        process_keyword(api_key, keyword)
+        process_keyword(api_key, keyword)  # Ensure this generates the aggregated rankings file
+        aggregated_filename = f'aggregated_rankings_for_{keyword}.txt'
+        top_rankings = read_top_aggregated_rankings(aggregated_filename, top_n=10)  # Adjust top_n as needed
+        plot_keyword_rankings(top_rankings, keyword)
 
 if __name__ == "__main__":
     main()

@@ -789,7 +789,48 @@
     {
         "title": "[Removed]",
         "url": "https://removed.com",
-        "word_rankings": []
+        "word_rankings": [
+            [
+                "sedo",
+                3
+            ],
+            [
+                "or",
+                3
+            ],
+            [
+                "by",
+                2
+            ],
+            [
+                "domain",
+                2
+            ],
+            [
+                "this",
+                1
+            ],
+            [
+                "webpage",
+                1
+            ],
+            [
+                "was",
+                1
+            ],
+            [
+                "generated",
+                1
+            ],
+            [
+                "the",
+                1
+            ],
+            [
+                "owner",
+                1
+            ]
+        ]
     },
     {
         "title": "Biden touts economic 'comeback' in election-year pitch to skeptical voters",
@@ -1438,7 +1479,48 @@
     {
         "title": "[Removed]",
         "url": "https://removed.com",
-        "word_rankings": []
+        "word_rankings": [
+            [
+                "sedo",
+                3
+            ],
+            [
+                "or",
+                3
+            ],
+            [
+                "by",
+                2
+            ],
+            [
+                "domain",
+                2
+            ],
+            [
+                "this",
+                1
+            ],
+            [
+                "webpage",
+                1
+            ],
+            [
+                "was",
+                1
+            ],
+            [
+                "generated",
+                1
+            ],
+            [
+                "the",
+                1
+            ],
+            [
+                "owner",
+                1
+            ]
+        ]
     },
     {
         "title": "The Transportation Department proposes new rules for how airlines handle wheelchairs",
