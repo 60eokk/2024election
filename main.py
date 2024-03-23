@@ -40,6 +40,7 @@ def main():
     articles = api.get_everything(q=keyword, language='en')
     all_original_rankings = []
     all_filtered_rankings = []
+    word_ranking_sums = {}
 
     for index, article in enumerate(articles['articles'], start=1):
         url = article['url']
@@ -62,6 +63,12 @@ def main():
                             '\n'.join([f"{i+1}: {word} ({count} times)" for i, (word, count) in enumerate(filtered_rankings)]) + \
                             "\n\n"
         all_filtered_rankings.append(formatted_filtered_rankings)
+        
+        # Sum the rankings for aggregate scoring
+        for i, (word, _) in enumerate(filtered_rankings):
+            if word not in word_ranking_sums:
+                word_ranking_sums[word] = 0
+            word_ranking_sums[word] += (i + 1)  # Add the ranking to the sum
 
     # Save original rankings to JSON file
     with open(f'word_rankings_for_{keyword}.json', 'w') as f:
@@ -72,9 +79,20 @@ def main():
     with open(filtered_filename, 'w') as f:
         for article_ranking in all_filtered_rankings:
             f.write(article_ranking)
+            
+    # Sort words by their aggregated ranking sums, from smallest to largest
+    sorted_aggregate_rankings = sorted(word_ranking_sums.items(), key=lambda x: x[1])
+    
+    # Save the aggregated rankings to a new file
+    aggregated_filename = f'aggregated_rankings_for_{keyword}.txt'
+    with open(aggregated_filename, 'w') as f:
+        for i, (word, total_ranking) in enumerate(sorted_aggregate_rankings, start=1):
+            f.write(f"{i}: {word} (Total Ranking: {total_ranking})\n")
 
     print(f"Original word rankings for all articles related to '{keyword}' have been saved to 'word_rankings_for_{keyword}.json'.")
     print(f"Filtered word rankings for all articles related to '{keyword}' have been saved to '{filtered_filename}'.")
+    print(f"Aggregated word rankings across all articles have been saved to '{aggregated_filename}'.")
 
 if __name__ == "__main__":
     main()
+

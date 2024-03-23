@@ -971,15 +971,15 @@
         "word_rankings": [
             [
                 "the",
-                34
+                33
             ],
             [
                 "and",
-                21
+                22
             ],
             [
                 "to",
-                20
+                21
             ],
             [
                 "a",
@@ -990,19 +990,19 @@
                 15
             ],
             [
+                "of",
+                14
+            ],
+            [
                 "on",
                 13
             ],
             [
-                "of",
-                13
+                "with",
+                12
             ],
             [
                 "for",
-                13
-            ],
-            [
-                "with",
                 12
             ],
             [
@@ -1237,6 +1237,52 @@
             ],
             [
                 "news",
+                10
+            ]
+        ]
+    },
+    {
+        "title": "Trump windfall could top $3 billion after shareholder vote on social media merger",
+        "url": "https://readwrite.com/trump-windfall-3-billion-social-media-merger/",
+        "word_rankings": [
+            [
+                "the",
+                32
+            ],
+            [
+                "and",
+                21
+            ],
+            [
+                "to",
+                19
+            ],
+            [
+                "a",
+                17
+            ],
+            [
+                "with",
+                17
+            ],
+            [
+                "for",
+                13
+            ],
+            [
+                "in",
+                12
+            ],
+            [
+                "is",
+                10
+            ],
+            [
+                "on",
+                10
+            ],
+            [
+                "s",
                 10
             ]
         ]
@@ -2112,6 +2158,52 @@
             [
                 "she",
                 10
+            ]
+        ]
+    },
+    {
+        "title": "Here are 13 Trump properties that NY AG Letitia James can go after if he doesn't pay up",
+        "url": "https://www.businessinsider.com/13-trumps-properties-ny-ag-go-after-doesnt-pay-2024-3",
+        "word_rankings": [
+            [
+                "the",
+                43
+            ],
+            [
+                "trump",
+                26
+            ],
+            [
+                "of",
+                20
+            ],
+            [
+                "in",
+                19
+            ],
+            [
+                "a",
+                19
+            ],
+            [
+                "million",
+                18
+            ],
+            [
+                "and",
+                16
+            ],
+            [
+                "s",
+                14
+            ],
+            [
+                "worth",
+                13
+            ],
+            [
+                "to",
+                12
             ]
         ]
     },
@@ -4422,98 +4514,6 @@
             [
                 "that",
                 6
-            ]
-        ]
-    },
-    {
-        "title": "Trump wins caucuses in Missouri and Idaho and sweeps Michigan GOP convention",
-        "url": "https://www.npr.org/2024/03/03/1235588882/trump-wins-caucuses-in-missouri-and-idaho-and-sweeps-michigan-gop-convention",
-        "word_rankings": [
-            [
-                "the",
-                58
-            ],
-            [
-                "to",
-                27
-            ],
-            [
-                "a",
-                24
-            ],
-            [
-                "of",
-                19
-            ],
-            [
-                "in",
-                18
-            ],
-            [
-                "s",
-                16
-            ],
-            [
-                "trump",
-                14
-            ],
-            [
-                "on",
-                14
-            ],
-            [
-                "and",
-                13
-            ],
-            [
-                "republican",
-                11
-            ]
-        ]
-    },
-    {
-        "title": "Biden and Trump are both at the border today, staking out ground on a key 2024 issue",
-        "url": "https://www.npr.org/2024/02/29/1234518923/biden-and-trump-are-both-at-the-border-today-staking-out-ground-on-a-key-2024-is",
-        "word_rankings": [
-            [
-                "the",
-                42
-            ],
-            [
-                "to",
-                31
-            ],
-            [
-                "on",
-                24
-            ],
-            [
-                "border",
-                23
-            ],
-            [
-                "biden",
-                21
-            ],
-            [
-                "in",
-                21
-            ],
-            [
-                "a",
-                21
-            ],
-            [
-                "and",
-                18
-            ],
-            [
-                "trump",
-                16
-            ],
-            [
-                "of",
-                14
             ]
         ]
     }

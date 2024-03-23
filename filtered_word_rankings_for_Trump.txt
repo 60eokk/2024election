@@ -1,0 +1,1382 @@
+Article 1: The Mysterious Case of the Missing Trump Trial Ransomware Leak
+URL: https://www.wired.com/story/lockbit-fulton-county-georgia-trump-ransomware-leak/
+Top words:
+1: s (28 times)
+2: county (24 times)
+3: lockbit (20 times)
+4: fulton (19 times)
+5: it (13 times)
+6: documents (12 times)
+7: from (12 times)
+8: its (11 times)
+9: have (10 times)
+10: as (9 times)
+
+Article 2: Panorama - Trump: The Sequel?
+URL: https://www.bbc.co.uk/iplayer/episode/m001x0yl/panorama-trump-the-sequel
+Top words:
+1: justin (1 times)
+2: webb (1 times)
+3: marianna (1 times)
+4: spring (1 times)
+5: travel (1 times)
+6: from (1 times)
+7: frozen (1 times)
+8: plains (1 times)
+9: iowa (1 times)
+10: swing (1 times)
+
+Article 3: How to watch President Joe Biden’s State of the Union address
+URL: https://www.theverge.com/2024/3/7/24092301/state-of-the-union-biden-how-to-watch-time-date
+Top words:
+1: biden (7 times)
+2: at (6 times)
+3: s (6 times)
+4: verge (4 times)
+5: media (4 times)
+6: address (4 times)
+7: as (4 times)
+8: will (4 times)
+9: has (4 times)
+10: policy (3 times)
+
+Article 4: Trump challenges Biden to TV debates 'anytime'
+URL: https://www.bbc.co.uk/news/world-us-canada-68497838
+Top words:
+1: mr (16 times)
+2: s (15 times)
+3: trump (12 times)
+4: biden (12 times)
+5: he (12 times)
+6: was (7 times)
+7: debates (6 times)
+8: republican (5 times)
+9: said (5 times)
+10: his (5 times)
+
+Article 5: How Truth Social Could Bail Trump Out of His Legal Bills
+URL: https://gizmodo.com/how-truth-social-could-bail-trump-out-his-legal-bills-1851355815
+Top words:
+1: trump (16 times)
+2: social (9 times)
+3: company (8 times)
+4: could (7 times)
+5: truth (6 times)
+6: was (6 times)
+7: as (6 times)
+8: s (5 times)
+9: media (5 times)
+10: over (5 times)
+
+Article 6: Biden and Trump 'clinch their party nominations'
+URL: https://www.bbc.co.uk/news/world-us-canada-68550523
+Top words:
+1: mr (12 times)
+2: as (11 times)
+3: s (10 times)
+4: us (9 times)
+5: trump (9 times)
+6: their (8 times)
+7: biden (6 times)
+8: his (6 times)
+9: primary (6 times)
+10: tuesday (6 times)
+
+Article 7: Donald Trump Pledges to Protect AM Radio in Rambling Speech to Christian Broadcasters
+URL: https://gizmodo.com/donald-trump-pledges-to-protect-am-radio-in-rambling-sp-1851281843
+Top words:
+1: am (18 times)
+2: trump (15 times)
+3: radio (12 times)
+4: s (11 times)
+5: his (9 times)
+6: it (9 times)
+7: has (7 times)
+8: but (6 times)
+9: be (6 times)
+10: speech (5 times)
+
+Article 8: Trump challenges $454m penalty in civil fraud case
+URL: https://www.bbc.co.uk/news/world-us-canada-68407054
+Top words:
+1: s (18 times)
+2: trump (17 times)
+3: he (17 times)
+4: mr (12 times)
+5: was (11 times)
+6: it (9 times)
+7: new (7 times)
+8: york (7 times)
+9: case (7 times)
+10: against (6 times)
+
+Article 9: Key takeaways from Super Tuesday's results so far
+URL: https://www.bbc.co.uk/news/world-us-canada-68472310
+Top words:
+1: trump (15 times)
+2: she (15 times)
+3: s (15 times)
+4: voters (13 times)
+5: said (11 times)
+6: mr (10 times)
+7: primary (10 times)
+8: tuesday (9 times)
+9: it (8 times)
+10: republican (8 times)
+
+Article 10: Biggest US election day yet as 15 states vote on Super Tuesday
+URL: https://www.bbc.co.uk/news/live/world-us-canada-68427309
+Top words:
+1: trump (54 times)
+2: s (48 times)
+3: haley (43 times)
+4: she (35 times)
+5: he (29 times)
+6: it (27 times)
+7: who (27 times)
+8: biden (25 times)
+9: as (24 times)
+10: his (22 times)
+
+Article 11: Trump calls on Alabama to protect IVF treatment
+URL: https://www.bbc.co.uk/news/world-us-canada-68388232
+Top words:
+1: s (15 times)
+2: ivf (9 times)
+3: alabama (9 times)
+4: ruling (8 times)
+5: trump (7 times)
+6: was (7 times)
+7: an (6 times)
+8: as (6 times)
+9: mr (6 times)
+10: it (6 times)
+
+Article 12: Trump Says Humiliating Videos of His Brain Farts Are AI-Generated
+URL: https://gizmodo.com/donald-trump-ai-videos-hur-testimony-fake-debunk-1851331323
+Top words:
+1: trump (11 times)
+2: s (11 times)
+3: videos (7 times)
+4: were (6 times)
+5: can (6 times)
+6: video (6 times)
+7: president (5 times)
+8: clips (5 times)
+9: hur (5 times)
+10: was (5 times)
+
+Article 13: Inside Election Conspiracy Groups on Super Tuesday
+URL: https://www.wired.com/story/election-conspiracy-groups-on-super-tuesday/
+Top words:
+1: election (18 times)
+2: was (8 times)
+3: s (8 times)
+4: they (8 times)
+5: trump (7 times)
+6: day (7 times)
+7: as (7 times)
+8: had (7 times)
+9: tuesday (6 times)
+10: out (6 times)
+
+Article 14: Truth Social Suffers Outage in Middle of Trump's Furious Live-Tweeting About Biden Speech
+URL: https://gizmodo.com/truth-social-down-outage-trump-biden-state-of-the-union-1851318732
+Top words:
+1: s (9 times)
+2: trump (7 times)
+3: biden (5 times)
+4: truth (4 times)
+5: social (4 times)
+6: site (4 times)
+7: about (4 times)
+8: it (3 times)
+9: president (3 times)
+10: was (3 times)
+
+Article 15: New Far-Right Conspiracy Claims Boeing's Accidents Are Intentional
+URL: https://www.wired.com/story/boeing-accidents-far-right-dei-conspiracy/
+Top words:
+1: this (16 times)
+2: boeing (15 times)
+3: s (14 times)
+4: it (9 times)
+5: by (8 times)
+6: as (8 times)
+7: right (8 times)
+8: are (8 times)
+9: dei (8 times)
+10: plane (7 times)
+
+Article 16: New poll shows Biden losing some of his 2020 voters to Trump and lagging in support among women
+URL: https://www.businessinsider.com/poll-biden-trump-women-suburban-voters-economy-inflation-2024-3
+Top words:
+1: biden (13 times)
+2: voters (13 times)
+3: trump (8 times)
+4: among (8 times)
+5: backed (7 times)
+6: election (6 times)
+7: as (6 times)
+8: s (6 times)
+9: 2020 (6 times)
+10: president (5 times)
+
+Article 17: This is happening: It's Trump versus Biden, and Trump has the upper hand now
+URL: https://www.businessinsider.com/trump-versus-biden-election-polling-trump-has-upper-hand-2024-3
+Top words:
+1: s (17 times)
+2: trump (15 times)
+3: biden (13 times)
+4: more (6 times)
+5: respondents (6 times)
+6: they (6 times)
+7: he (5 times)
+8: voters (5 times)
+9: said (5 times)
+10: at (5 times)
+
+Article 18: Eric Trump's wife, Lara Trump, now co-chairs the RNC. Here's a timeline of their relationship.
+URL: https://www.businessinsider.com/eric-trump-lara-trump-relationship-timeline
+Top words:
+1: s (24 times)
+2: trump (22 times)
+3: lara (22 times)
+4: i (18 times)
+5: you (15 times)
+6: eric (14 times)
+7: an (12 times)
+8: she (11 times)
+9: we (11 times)
+10: as (10 times)
+
+Article 19: A Stormy Daniels documentary comes out Monday, and Trump's hush-money lawyers are already raging. Here's why.
+URL: https://www.businessinsider.com/bombshells-in-stormy-documentary-have-trump-lawyers-raging-2024-3
+Top words:
+1: she (41 times)
+2: her (28 times)
+3: s (26 times)
+4: trump (26 times)
+5: daniels (22 times)
+6: was (20 times)
+7: said (15 times)
+8: it (14 times)
+9: film (13 times)
+10: says (12 times)
+
+Article 20: Haley's Out: Can Trump Win Her Supporters?
+URL: https://www.npr.org/2024/03/06/1198910635/haleys-out-can-trump-win-her-supporters
+Top words:
+1: haley (8 times)
+2: her (7 times)
+3: campaign (6 times)
+4: she (6 times)
+5: s (5 times)
+6: republican (4 times)
+7: presidential (4 times)
+8: nikki (4 times)
+9: after (4 times)
+10: at (4 times)
+
+Article 21: Trump again mixed up Obama and Biden during Virginia rally speech
+URL: https://www.businessinsider.com/trump-mixes-up-biden-obama-again-in-virginia-rally-speech-2024-3
+Top words:
+1: trump (11 times)
+2: has (10 times)
+3: he (9 times)
+4: biden (7 times)
+5: obama (7 times)
+6: as (6 times)
+7: president (5 times)
+8: up (5 times)
+9: nuclear (4 times)
+10: his (4 times)
+
+Article 22: Trump defends TikTok against ‘enemy’ Meta
+URL: https://readwrite.com/trump-defends-tiktok-against-enemy-meta/
+Top words:
+1: this (9 times)
+2: tech (8 times)
+3: you (6 times)
+4: she (5 times)
+5: tiktok (5 times)
+6: has (5 times)
+7: app (5 times)
+8: s (5 times)
+9: legislation (4 times)
+10: trump (4 times)
+
+Article 23: Trump appeals New York civil fraud loss as $454 million judgment grows with each day he doesn't pay up
+URL: https://www.businessinsider.com/trump-appeals-new-york-fraud-judgement-money-interest-2024-2
+Top words:
+1: trump (28 times)
+2: s (23 times)
+3: his (15 times)
+4: he (13 times)
+5: engoron (11 times)
+6: court (8 times)
+7: appeal (7 times)
+8: will (7 times)
+9: million (6 times)
+10: as (6 times)
+
+Article 24: Mark Cuban says he's not voting for Donald Trump because he doesn't want 'a snake oil salesperson as President'
+URL: https://www.businessinsider.com/mark-cuban-trump-snake-oil-salesperson-not-voting-for-him-2024-3
+Top words:
+1: cuban (13 times)
+2: musk (10 times)
+3: biden (9 times)
+4: trump (7 times)
+5: he (7 times)
+6: vote (6 times)
+7: president (6 times)
+8: s (6 times)
+9: i (5 times)
+10: told (5 times)
+
+Article 25: Ivanka Trump and her shiny sari are attempting to single-handedly revive the glamorous face of Trumpworld at Ambani's pre-wedding bash
+URL: https://www.businessinsider.com/photos-ivanka-trump-wears-shiny-sari-to-ambani-wedding-event-2024-3
+Top words:
+1: trump (14 times)
+2: s (12 times)
+3: her (5 times)
+4: ambani (4 times)
+5: also (3 times)
+6: his (3 times)
+7: donald (3 times)
+8: father (3 times)
+9: political (3 times)
+10: sari (2 times)
+
+Article 26: What a Trump 2.0 presidency would mean for the stock market
+URL: https://markets.businessinsider.com/news/stocks/donald-trump-second-term-president-stock-market-implications-inflation-rates-2024-2
+Top words:
+1: would (20 times)
+2: trump (14 times)
+3: stock (7 times)
+4: be (6 times)
+5: said (6 times)
+6: market (5 times)
+7: likely (5 times)
+8: us (5 times)
+9: we (5 times)
+10: his (5 times)
+
+Article 27: “Trump asked Elon Musk if he wanted to buy Truth Social” says report
+URL: https://readwrite.com/trump-asked-elon-musk-if-he-wanted-to-buy-truth-social-says-report/
+Top words:
+1: as (14 times)
+2: news (10 times)
+3: he (10 times)
+4: social (9 times)
+5: tech (9 times)
+6: an (7 times)
+7: media (7 times)
+8: not (7 times)
+9: trump (6 times)
+10: content (5 times)
+
+Article 28: Trump windfall could top $3 billion after shareholder vote on social media merger
+URL: https://readwrite.com/trump-windfall-3-billion-social-media-merger/
+Top words:
+1: s (10 times)
+2: trump (8 times)
+3: as (8 times)
+4: tech (8 times)
+5: this (6 times)
+6: be (6 times)
+7: she (5 times)
+8: an (5 times)
+9: media (5 times)
+10: social (5 times)
+
+Article 29: Republicans are panicking about IVF treatment being restricted in Alabama
+URL: https://www.businessinsider.com/trump-alabama-ivf-ruling-gop-republicans-2024-biden-2024-2
+Top words:
+1: s (11 times)
+2: ivf (9 times)
+3: alabama (8 times)
+4: court (7 times)
+5: trump (6 times)
+6: ruling (6 times)
+7: it (6 times)
+8: not (5 times)
+9: said (5 times)
+10: restrictions (5 times)
+
+Article 30: Bill Gates and Mark Zuckerberg are among the CEOs and celebs set to attend a 3-day pre-wedding party being thrown by an Indian tycoon worth $113 billion
+URL: https://www.businessinsider.com/bill-gates-mark-zuckerberg-among-expected-attendees-at-indian-wedding-2024-2
+Top words:
+1: s (9 times)
+2: ambani (7 times)
+3: are (6 times)
+4: india (6 times)
+5: reported (6 times)
+6: celebrations (4 times)
+7: reliance (4 times)
+8: elder (4 times)
+9: some (3 times)
+10: attend (3 times)
+
+Article 31: Former 'apprentices' and Trump Media cofounders file lawsuit claiming company execs tried to dilute their stake ahead of a potential merger
+URL: https://www.businessinsider.com/trump-media-company-cofounders-sue-scheme-dilute-shares-2024-3
+Top words:
+1: trump (16 times)
+2: s (7 times)
+3: media (7 times)
+4: company (7 times)
+5: shares (7 times)
+6: merger (7 times)
+7: would (7 times)
+8: litinsky (5 times)
+9: lawsuit (4 times)
+10: be (4 times)
+
+Article 32: The ultimate guide to Super Tuesday
+URL: https://www.businessinsider.com/super-tuesday-guide-delegates-primaries-caucuses-biden-trump-haley-2024-3
+Top words:
+1: delegates (35 times)
+2: at (33 times)
+3: stake (31 times)
+4: democratic (30 times)
+5: gop (29 times)
+6: s (28 times)
+7: trump (26 times)
+8: state (23 times)
+9: primary (22 times)
+10: biden (18 times)
+
+Article 33: Trump's bombastic personality defined his civil proceedings. In criminal court, lawyers from Trump's orbit say it could be his demise.
+URL: https://www.businessinsider.com/trumps-antics-could-harm-him-in-upcoming-criminal-trials-2024-3
+Top words:
+1: trump (15 times)
+2: his (9 times)
+3: he (8 times)
+4: case (8 times)
+5: trial (5 times)
+6: former (5 times)
+7: it (4 times)
+8: s (4 times)
+9: jury (4 times)
+10: attorneys (4 times)
+
+Article 34: The Supreme Court agrees to hear Trump's presidential immunity claim
+URL: https://www.businessinsider.com/supreme-court-agrees-hear-trumps-immunity-claim-in-election-case-2024-2
+Top words:
+1: trump (11 times)
+2: case (8 times)
+3: court (7 times)
+4: s (7 times)
+5: election (5 times)
+6: supreme (4 times)
+7: immunity (4 times)
+8: his (4 times)
+9: president (3 times)
+10: federal (3 times)
+
+Article 35: Trump insults Nikki Haley and her voters, then encourages them to back him
+URL: https://www.businessinsider.com/trump-insults-nikki-haley-her-voters-invites-their-support-2024-3
+Top words:
+1: trump (11 times)
+2: haley (9 times)
+3: s (8 times)
+4: her (7 times)
+5: president (6 times)
+6: biden (6 times)
+7: his (5 times)
+8: him (5 times)
+9: he (5 times)
+10: former (4 times)
+
+Article 36: Trump will win the 2024 election if it's held now, says GOP mega-donor Ken Griffin
+URL: https://www.businessinsider.com/ken-griffin-says-trump-win-2024-election-if-held-tomorrow-2024-3
+Top words:
+1: he (14 times)
+2: trump (13 times)
+3: s (12 times)
+4: griffin (11 times)
+5: president (3 times)
+6: but (3 times)
+7: said (3 times)
+8: tuesday (3 times)
+9: eisen (3 times)
+10: was (3 times)
+
+Article 37: Biden faces high-stakes address to calm Democrat nerves
+URL: https://www.bbc.co.uk/news/world-us-canada-68498032
+Top words:
+1: mr (25 times)
+2: his (24 times)
+3: s (22 times)
+4: biden (20 times)
+5: he (15 times)
+6: president (13 times)
+7: has (10 times)
+8: will (9 times)
+9: as (9 times)
+10: trump (9 times)
+
+Article 38: Unanimous Supreme Court restores Trump to Colorado ballot
+URL: https://www.npr.org/2024/03/04/1230453714/supreme-court-trump-colorado-ballot
+Top words:
+1: trump (22 times)
+2: court (18 times)
+3: s (15 times)
+4: said (11 times)
+5: not (10 times)
+6: colorado (9 times)
+7: ballot (9 times)
+8: from (9 times)
+9: president (8 times)
+10: supreme (7 times)
+
+Article 39: Trump trial judge staff opens an envelope with a powdery substance after $454 million verdict
+URL: https://www.businessinsider.com/trump-trial-judge-sent-powdery-substance-after-verdict-2024-2
+Top words:
+1: trump (21 times)
+2: s (9 times)
+3: engoron (9 times)
+4: his (8 times)
+5: million (8 times)
+6: was (6 times)
+7: judgment (5 times)
+8: substance (5 times)
+9: new (4 times)
+10: york (4 times)
+
+Article 40: Surprise ruling from Illinois judge removes Trump from the ballot due to 'insurrectionist ban'
+URL: https://www.businessinsider.com/illinois-judge-removes-trump-ballot-insurrectionist-ban-2024-2
+Top words:
+1: trump (8 times)
+2: from (5 times)
+3: ballot (5 times)
+4: illinois (4 times)
+5: s (4 times)
+6: judge (3 times)
+7: state (3 times)
+8: colorado (3 times)
+9: decision (3 times)
+10: removed (2 times)
+
+Article 41: Trump waves at migrants he's trying to keep out at the US-Mexico border
+URL: https://www.businessinsider.com/trump-waves-at-migrants-texas-border-visit-they-like-me-2024-3
+Top words:
+1: trump (11 times)
+2: border (7 times)
+3: biden (7 times)
+4: his (6 times)
+5: he (6 times)
+6: s (6 times)
+7: said (5 times)
+8: at (4 times)
+9: country (4 times)
+10: migrants (3 times)
+
+Article 42: How Super Tuesday could shape Trump, Biden, and Haley's future
+URL: https://www.businessinsider.com/how-super-tuesday-could-shape-trump-biden-and-haleys-future-2024-3
+Top words:
+1: or (4 times)
+2: march (2 times)
+3: 5 (2 times)
+4: marks (2 times)
+5: super (2 times)
+6: tuesday (2 times)
+7: day (2 times)
+8: can (2 times)
+9: make (2 times)
+10: break (2 times)
+
+Article 43: 5 reasons why Trump won the South Carolina GOP primary
+URL: https://www.businessinsider.com/why-trump-won-south-carolina-republican-primary-haley-2024-2
+Top words:
+1: voters (20 times)
+2: trump (13 times)
+3: primary (13 times)
+4: s (10 times)
+5: south (10 times)
+6: carolina (10 times)
+7: haley (9 times)
+8: over (7 times)
+9: won (7 times)
+10: by (6 times)
+
+Article 44: Trump dominates Super Tuesday, but Nikki Haley avoids a sweep
+URL: https://www.businessinsider.com/trump-beats-haley-super-tuesday-vermont-stops-sweep-2024-3
+Top words:
+1: trump (11 times)
+2: haley (11 times)
+3: s (10 times)
+4: tuesday (9 times)
+5: state (9 times)
+6: as (6 times)
+7: super (5 times)
+8: vermont (5 times)
+9: party (5 times)
+10: her (5 times)
+
+Article 45: Haley calls Trump's 'disgusting' comments about Black people a 'huge warning sign'
+URL: https://www.npr.org/2024/02/24/1233718517/nikki-haley-donald-trump-black-voters-race-election-day-sc
+Top words:
+1: s (25 times)
+2: trump (13 times)
+3: donald (10 times)
+4: black (10 times)
+5: former (9 times)
+6: haley (9 times)
+7: republican (6 times)
+8: presidential (6 times)
+9: candidate (6 times)
+10: c (6 times)
+
+Article 46: Donald Trump appeals $454 million judgment in New York civil fraud case
+URL: https://www.npr.org/2024/02/27/1234112377/donald-trump-appeal-new-york-civil-fraud-case
+Top words:
+1: trump (38 times)
+2: s (31 times)
+3: he (19 times)
+4: his (17 times)
+5: court (16 times)
+6: appeal (12 times)
+7: engoron (12 times)
+8: lawyers (11 times)
+9: or (11 times)
+10: new (10 times)
+
+Article 47: Meet Lara Trump, Donald Trump's daughter-in-law whom he handpicked to lead the RNC
+URL: https://www.businessinsider.com/lara-trump-donald-trump-rnc-2024-3
+Top words:
+1: trump (32 times)
+2: s (22 times)
+3: as (12 times)
+4: she (10 times)
+5: lara (9 times)
+6: at (7 times)
+7: news (6 times)
+8: their (6 times)
+9: who (5 times)
+10: donald (5 times)
+
+Article 48: Here are 13 Trump properties that NY AG Letitia James can go after if he doesn't pay up
+URL: https://www.businessinsider.com/13-trumps-properties-ny-ag-go-after-doesnt-pay-2024-3
+Top words:
+1: trump (26 times)
+2: million (18 times)
+3: s (14 times)
+4: worth (13 times)
+5: forbes (12 times)
+6: net (11 times)
+7: this (10 times)
+8: building (10 times)
+9: at (9 times)
+10: as (9 times)
+
+Article 49: Trump wants a 78% discount on his bond while he appeals the massive $454 million judgment against him
+URL: https://www.businessinsider.com/trump-pleads-poverty-new-york-civil-fraud-trial-bond-2024-2
+Top words:
+1: trump (16 times)
+2: s (11 times)
+3: he (9 times)
+4: new (9 times)
+5: york (9 times)
+6: judgment (9 times)
+7: court (8 times)
+8: bond (7 times)
+9: his (6 times)
+10: could (6 times)
+
+Article 50: Donald Trump still has a problem with suburban voters, and it could cost him the election
+URL: https://www.businessinsider.com/trump-haley-suburbs-gop-problem-north-carolina-virginia-2024-3
+Top words:
+1: trump (15 times)
+2: by (8 times)
+3: won (7 times)
+4: voters (6 times)
+5: s (6 times)
+6: his (6 times)
+7: suburban (6 times)
+8: county (6 times)
+9: points (6 times)
+10: haley (5 times)
+
+Article 51: Putin said Trump wasn't happy with him in 2020 because he thought the Russian leader wanted 'Sleepy Joe to win'
+URL: https://www.businessinsider.com/putin-said-trump-upset-2020-thought-putin-liked-joe-biden-2024-3
+Top words:
+1: he (15 times)
+2: putin (11 times)
+3: biden (11 times)
+4: s (11 times)
+5: trump (9 times)
+6: said (7 times)
+7: president (6 times)
+8: me (6 times)
+9: was (5 times)
+10: his (4 times)
+
+Article 52: Trump says without TikTok, 'Facebook and Zuckerschmuck will double their business'
+URL: https://www.businessinsider.com/trump-comments-tiktok-ban-bill-facebook-zuckerberg-2024-3
+Top words:
+1: trump (19 times)
+2: s (10 times)
+3: facebook (10 times)
+4: his (9 times)
+5: zuckerberg (8 times)
+6: president (7 times)
+7: from (7 times)
+8: musk (7 times)
+9: has (6 times)
+10: former (5 times)
+
+Article 53: Judge threatens to kick DA Fani Willis off Trump's Georgia election interference case if top prosecutor doesn't step aside
+URL: https://www.businessinsider.com/fani-willis-removed-from-trumps-georgia-election-interference-case-2024-2
+Top words:
+1: wade (25 times)
+2: willis (24 times)
+3: s (15 times)
+4: attorney (14 times)
+5: case (14 times)
+6: he (13 times)
+7: her (11 times)
+8: his (11 times)
+9: this (11 times)
+10: she (10 times)
+
+Article 54: With Super Tuesday over, China and Xi may be praying for Trump to beat Biden
+URL: https://www.businessinsider.com/china-hoping-trump-beats-biden-super-tuesday-election-2024-3
+Top words:
+1: china (17 times)
+2: trump (15 times)
+3: s (14 times)
+4: biden (9 times)
+5: it (9 times)
+6: us (9 times)
+7: who (8 times)
+8: but (7 times)
+9: beijing (7 times)
+10: be (6 times)
+
+Article 55: Nikki Haley evades committing to endorse Donald Trump if he wins the Republican presidential nomination
+URL: https://www.businessinsider.com/nikki-haley-sidestepped-question-whether-would-endorse-trump-as-nominee
+Top words:
+1: s (13 times)
+2: trump (13 times)
+3: haley (9 times)
+4: she (9 times)
+5: her (9 times)
+6: about (7 times)
+7: he (6 times)
+8: has (5 times)
+9: as (5 times)
+10: republican (4 times)
+
+Article 56: Supreme Court hears challenge to Trump-era ban on bump stocks for guns
+URL: https://www.npr.org/2024/02/28/1234248032/supreme-court-bump-stocks
+Top words:
+1: bump (16 times)
+2: machine (11 times)
+3: semiautomatic (9 times)
+4: guns (9 times)
+5: stocks (9 times)
+6: trigger (8 times)
+7: weapons (7 times)
+8: stock (7 times)
+9: regulation (6 times)
+10: gun (6 times)
+
+Article 57: Here are North Dakota's 2024 Republican caucus results
+URL: https://www.npr.org/2024/03/04/1233953162/north-dakota-2024-primary-caucus-results
+Top words:
+1: p (3 times)
+2: m (3 times)
+3: hold (2 times)
+4: their (2 times)
+5: former (2 times)
+6: sponsor (2 times)
+7: by (1 times)
+8: washington (1 times)
+9: desk (1 times)
+10: north (1 times)
+
+Article 58: Nikki Haley to suspend presidential campaign
+URL: https://www.npr.org/2024/03/06/1228580178/nikki-haley-drops-out-presidential-campaign-trump-biden
+Top words:
+1: haley (29 times)
+2: her (21 times)
+3: she (19 times)
+4: trump (19 times)
+5: s (15 times)
+6: i (14 times)
+7: republican (10 times)
+8: said (9 times)
+9: his (9 times)
+10: south (8 times)
+
+Article 59: Trump CFO Allen Weisselberg told a blatant lie about a blatant lie. Here's how NYC prosecutors got him for perjury.
+URL: https://www.businessinsider.com/heres-how-ny-caught-trumps-cfo-in-perjury-2024-3
+Top words:
+1: trump (23 times)
+2: weisselberg (22 times)
+3: s (21 times)
+4: was (17 times)
+5: he (10 times)
+6: his (10 times)
+7: as (8 times)
+8: square (8 times)
+9: monday (7 times)
+10: had (6 times)
+
+Article 60: SCOTUS takes on Trump immunity case; Gaza death toll surpasses 30,000
+URL: https://www.npr.org/2024/02/29/1234785410/up-first-newsletter-scotus-trump-immunity-gaza-death-toll
+Top words:
+1: from (8 times)
+2: s (7 times)
+3: an (5 times)
+4: it (4 times)
+5: will (4 times)
+6: trump (4 times)
+7: his (4 times)
+8: hide (4 times)
+9: caption (4 times)
+10: senate (4 times)
+
+Article 61: Now that he's the presumptive nominee, Trump readies next campaign: who will be VP?
+URL: https://www.npr.org/2024/03/09/1236992252/donald-trump-vp-pick-running-mate-vice-president
+Top words:
+1: trump (31 times)
+2: s (21 times)
+3: i (16 times)
+4: president (14 times)
+5: she (13 times)
+6: he (12 times)
+7: his (12 times)
+8: at (10 times)
+9: said (10 times)
+10: it (10 times)
+
+Article 62: Biden and Trump trade barbs at rival rallies in Georgia
+URL: https://www.npr.org/2024/03/10/1237222167/biden-and-trump-trade-barbs-at-rival-rallies-in-georgia
+Top words:
+1: biden (25 times)
+2: trump (25 times)
+3: s (20 times)
+4: state (15 times)
+5: his (15 times)
+6: he (14 times)
+7: said (14 times)
+8: at (11 times)
+9: an (10 times)
+10: president (9 times)
+
+Article 63: Pro-Trump attorney arrested after hearing over leaking Dominion documents
+URL: https://www.npr.org/2024/03/18/1239384735/pro-trump-attorney-arrested-after-hearing-over-leaking-dominion-documents
+Top words:
+1: lambert (14 times)
+2: dominion (12 times)
+3: s (12 times)
+4: election (9 times)
+5: she (9 times)
+6: michigan (7 times)
+7: had (7 times)
+8: voting (6 times)
+9: case (6 times)
+10: against (6 times)
+
+Article 64: Trump tried to move assets to Florida, NY officials complain in fraud-judgment filing
+URL: https://www.businessinsider.com/trump-tried-to-move-assets-to-florida-ny-attorney-general-2024-3
+Top words:
+1: trump (36 times)
+2: s (22 times)
+3: address (12 times)
+4: new (10 times)
+5: he (9 times)
+6: york (8 times)
+7: lawyers (8 times)
+8: golf (8 times)
+9: tower (7 times)
+10: fraud (7 times)
+
+Article 65: Biden and Trump could clinch presidential nominations after tonight's elections
+URL: https://www.npr.org/2024/03/12/1238033721/donald-trump-joe-biden-nomination-delegates
+Top words:
+1: trump (12 times)
+2: biden (11 times)
+3: at (10 times)
+4: s (9 times)
+5: president (7 times)
+6: delegates (7 times)
+7: as (6 times)
+8: republican (5 times)
+9: presidential (5 times)
+10: party (5 times)
+
+Article 66: How NY's Judge Engoron is tightening the leash on Trump ahead of looming Truth Social merger and fraud judgement deadline
+URL: https://www.businessinsider.com/how-nys-judge-engoron-is-tightening-the-leash-on-trump-2024-3
+Top words:
+1: trump (31 times)
+2: s (19 times)
+3: his (12 times)
+4: thursday (10 times)
+5: judge (9 times)
+6: or (9 times)
+7: million (7 times)
+8: fraud (6 times)
+9: be (6 times)
+10: assets (6 times)
+
+Article 67: Hackers threaten to release Trump documents from Georgia case if they don't get a ransom by Thursday
+URL: https://www.businessinsider.com/trump-georgia-documents-ransom-threat-fulton-county-hack-lockbit-2024-2
+Top words:
+1: s (22 times)
+2: lockbit (19 times)
+3: said (17 times)
+4: it (16 times)
+5: its (15 times)
+6: group (12 times)
+7: county (12 times)
+8: fulton (10 times)
+9: trump (10 times)
+10: ransom (10 times)
+
+Article 68: Authorities have launched a 'criminal investigation' into Foremost Group CEO Angela Chao's death, report says
+URL: https://www.businessinsider.com/criminal-investigation-opened-for-foremost-group-ceo-angela-chaos-pond-death-2024-3
+Top words:
+1: chao (7 times)
+2: was (7 times)
+3: s (5 times)
+4: as (5 times)
+5: said (4 times)
+6: criminal (4 times)
+7: her (4 times)
+8: texas (3 times)
+9: investigation (3 times)
+10: this (3 times)
+
+Article 69: Surprising misconceptions about Trump and Biden ahead of the 2024 election
+URL: https://www.businessinsider.com/trump-vs-biden-election-rematch-issues-age-immigration-abortion-2024-2
+Top words:
+1: 2024 (2 times)
+2: presidential (2 times)
+3: election (2 times)
+4: looking (2 times)
+5: be (2 times)
+6: trump (2 times)
+7: vs (2 times)
+8: biden (2 times)
+9: rematch (2 times)
+10: our (2 times)
+
+Article 70: Mark Cuban says he will vote for Joe Biden even if the president 'was being given last rites'
+URL: https://www.businessinsider.com/mark-cuban-will-vote-for-joe-biden-despite-his-age-2024-3
+Top words:
+1: cuban (12 times)
+2: s (10 times)
+3: trump (10 times)
+4: biden (9 times)
+5: he (7 times)
+6: said (6 times)
+7: his (5 times)
+8: haley (5 times)
+9: was (4 times)
+10: told (4 times)
+
+Article 71: Trump fights proposed hush-money trial gag, argues 'tens of millions of Americans' want to hear his views about the case
+URL: https://www.businessinsider.com/trump-says-hush-money-gag-will-hurt-millions-of-americans-2024-3
+Top words:
+1: trump (18 times)
+2: s (13 times)
+3: president (8 times)
+4: not (7 times)
+5: his (6 times)
+6: gag (6 times)
+7: case (6 times)
+8: has (5 times)
+9: judge (5 times)
+10: by (5 times)
+
+Article 72: Exclusive: Russia-linked smear campaign against Hunter Biden began earlier than previously thought
+URL: https://www.businessinsider.com/a-russia-linked-campaign-to-spread-dirt-about-hunter-biden-and-burisma-2024-2
+Top words:
+1: s (23 times)
+2: biden (17 times)
+3: hunter (15 times)
+4: about (14 times)
+5: rollie (14 times)
+6: he (12 times)
+7: by (11 times)
+8: his (11 times)
+9: was (11 times)
+10: pompeo (10 times)
+
+Article 73: Trump's former CFO will plead guilty to NY fraud trial perjury: NYT
+URL: https://www.businessinsider.com/trumps-former-cfo-will-plead-guilty-to-ny-fraud-trial-perjury-2024-3
+Top words:
+1: s (17 times)
+2: trump (14 times)
+3: weisselberg (13 times)
+4: at (9 times)
+5: manhattan (8 times)
+6: trial (7 times)
+7: he (7 times)
+8: court (5 times)
+9: attorney (5 times)
+10: former (4 times)
+
+Article 74: Trump won't get to hand-pick McConnell's successor — just look at what happened to Jim Jordan
+URL: https://www.businessinsider.com/trump-wont-pick-mcconnells-successor-recall-jim-jordans-speaker-bid-2024-2
+Top words:
+1: s (24 times)
+2: trump (13 times)
+3: it (13 times)
+4: be (11 times)
+5: he (11 times)
+6: will (10 times)
+7: gop (9 times)
+8: house (9 times)
+9: leader (8 times)
+10: his (8 times)
+
+Article 75: Taylor Swift tells fans to vote on Super Tuesday without endorsing anyone
+URL: https://www.businessinsider.com/taylor-swift-tells-fans-vote-on-super-tuesday-no-endorsement-2024-3
+Top words:
+1: s (10 times)
+2: her (9 times)
+3: swift (8 times)
+4: she (6 times)
+5: political (5 times)
+6: vote (5 times)
+7: biden (4 times)
+8: fans (3 times)
+9: tuesday (3 times)
+10: candidates (3 times)
+
+Article 76: Nikki Haley just won her first primary victory in DC, but Trump is still crushing the GOP race
+URL: https://www.businessinsider.com/nikki-haley-win-first-gop-primary-dc-trump-still-frontrunner-2024-3
+Top words:
+1: haley (7 times)
+2: trump (6 times)
+3: has (5 times)
+4: she (4 times)
+5: delegates (4 times)
+6: s (4 times)
+7: campaign (4 times)
+8: super (4 times)
+9: tuesday (4 times)
+10: going (4 times)
+
+Article 77: Nikki Haley picks up Collins, Murkowski endorsements while most Senate Republicans line up behind Trump
+URL: https://www.businessinsider.com/nikki-haley-senate-gop-endorsements-murkowski-collins-trump-primary-2024-3
+Top words:
+1: haley (7 times)
+2: trump (6 times)
+3: gop (6 times)
+4: from (5 times)
+5: murkowski (5 times)
+6: collins (5 times)
+7: president (4 times)
+8: as (4 times)
+9: s (4 times)
+10: his (3 times)
+
+Article 78: Trump’s Lawyers Say It’s Impossible for Him to Post Bond Covering $454M Civil Fraud Judgment
+URL: https://time.com/6958065/trump-lawyers-bond-impossible-civil-fraud/
+Top words:
+1: trump (19 times)
+2: bond (13 times)
+3: he (13 times)
+4: s (11 times)
+5: his (11 times)
+6: court (8 times)
+7: million (8 times)
+8: judgment (7 times)
+9: appeals (7 times)
+10: or (6 times)
+
+Article 79: Mike Pence said it should be 'no surprise' that he won't be endorsing Donald Trump for president
+URL: https://www.businessinsider.com/mike-pence-refuses-endorse-donald-trump-for-2024-presidential-election-2024-3
+Top words:
+1: trump (13 times)
+2: pence (11 times)
+3: he (7 times)
+4: i (7 times)
+5: said (6 times)
+6: president (5 times)
+7: donald (4 times)
+8: s (4 times)
+9: after (4 times)
+10: would (3 times)
+
+Article 80: Trump just couldn't resist spending his Sunday night hate posting about the 'really bad politically correct' Oscars
+URL: https://www.businessinsider.com/trump-rants-about-really-bad-politically-correct-oscars-2024-3
+Top words:
+1: trump (16 times)
+2: s (9 times)
+3: t (8 times)
+4: oscars (7 times)
+5: awards (6 times)
+6: back (6 times)
+7: kimmel (6 times)
+8: this (5 times)
+9: year (5 times)
+10: said (5 times)
+
+Article 81: As Trump romps to wins, anti-Trump Republicans wonder: Do I still have a political home?
+URL: https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a808647e-4d0e-493c-83d7-19ce7258ccd0
+Top words:
+
+
+Article 82: McConnell endorses Trump for president. He once blamed Trump for 'disgraceful' Jan. 6, 2021, attack
+URL: https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_1407fafb-5120-4878-afb2-56c9e5d73180
+Top words:
+
+
+Article 83: Donald Trump once offered to sell Truth Social to Elon Musk, report says
+URL: https://www.businessinsider.com/donald-trump-offered-sell-truth-social-elon-musk-twitter-report-2024-3
+Top words:
+1: trump (14 times)
+2: musk (11 times)
+3: post (9 times)
+4: truth (5 times)
+5: social (5 times)
+6: was (5 times)
+7: from (5 times)
+8: last (4 times)
+9: twitter (4 times)
+10: as (4 times)
+
+Article 84: Space Force Doesn't Want Anyone to See Its Secret Logo Mockups
+URL: https://gizmodo.com/space-force-redacted-logo-mockups-foia-1851344451
+Top words:
+1: space (15 times)
+2: force (15 times)
+3: s (12 times)
+4: logo (8 times)
+5: it (6 times)
+6: its (5 times)
+7: military (5 times)
+8: an (5 times)
+9: designs (5 times)
+10: by (5 times)
+
+Article 85: It may look like Trump scared NATO back into readiness — but it's probably all down to Putin
+URL: https://www.businessinsider.com/trump-didnt-scare-nato-defense-spending-putin-did-experts-2024-2
+Top words:
+1: he (21 times)
+2: s (21 times)
+3: trump (20 times)
+4: nato (20 times)
+5: it (18 times)
+6: said (17 times)
+7: us (13 times)
+8: spending (10 times)
+9: t (9 times)
+10: at (8 times)
+
+Article 86: Nikki Haley should be a natural fit for the South Carolina Lowcountry. So why is Trump poised to win the region in the GOP primary?
+URL: https://www.businessinsider.com/haley-trump-south-carolina-lowcountry-conservatives-gop-moderates-2024-2
+Top words:
+1: haley (13 times)
+2: s (13 times)
+3: trump (12 times)
+4: state (8 times)
+5: has (8 times)
+6: lowcountry (8 times)
+7: voters (8 times)
+8: have (7 times)
+9: as (6 times)
+10: her (6 times)
+
+Article 87: Trial shocker: Jurors can hear about a 2015 Trump Tower meeting that prosecutors say was a hush-money huddle hosted by Trump
+URL: https://www.businessinsider.com/trial-shocker-jurors-can-hear-trump-2015-hush-money-meeting-2024-3
+Top words:
+1: trump (24 times)
+2: s (16 times)
+3: meeting (11 times)
+4: judge (10 times)
+5: prosecutors (8 times)
+6: daniels (7 times)
+7: former (6 times)
+8: tower (6 times)
+9: evidence (6 times)
+10: he (6 times)
+
+Article 88: Trump might make billions from Truth Social just as it needs the cash the most
+URL: https://www.businessinsider.com/trump-truth-social-how-much-stake-worth-approval-3-2024
+Top words:
+1: trump (11 times)
+2: s (10 times)
+3: his (7 times)
+4: former (6 times)
+5: president (6 times)
+6: company (6 times)
+7: acquisition (5 times)
+8: social (4 times)
+9: media (4 times)
+10: new (4 times)
+
+Article 89: A third of young voters said they wouldn't want to be friends with someone who voted for a different presidential candidate: poll
+URL: https://www.businessinsider.com/third-young-voters-friendsip-democrats-republicans-trump-biden-poll-2024-2
+Top words:
+1: presidential (6 times)
+2: s (6 times)
+3: trump (5 times)
+4: as (4 times)
+5: party (4 times)
+6: poll (4 times)
+7: voters (4 times)
+8: they (3 times)
+9: be (3 times)
+10: between (3 times)
+
+Article 90: CIA allegedly made fake social media accounts to troll the Chinese government
+URL: https://www.theverge.com/2024/3/14/24100984/cia-china-fake-social-media-spying
+Top words:
+1: media (8 times)
+2: social (6 times)
+3: cia (4 times)
+4: fake (4 times)
+5: verge (3 times)
+6: operation (3 times)
+7: troll (3 times)
+8: chinese (3 times)
+9: public (3 times)
+10: opinion (3 times)
+
+Article 91: 3 theories to explain Trump's TikTok flip-flop
+URL: https://www.businessinsider.com/why-trump-changed-his-mind-on-tiktok-2024-3
+Top words:
+1: tiktok (25 times)
+2: s (21 times)
+3: trump (18 times)
+4: he (13 times)
+5: it (12 times)
+6: ban (11 times)
+7: his (9 times)
+8: i (9 times)
+9: but (8 times)
+10: which (8 times)
+
+Article 92: Out of options, Trump will pay $500M cash bond to appeal his NY fraud case, experts predict. Not paying will hurt even more.
+URL: https://www.businessinsider.com/trump-needs-500m-cash-for-appeal-bond-ny-fraud-case-2024-3
+Top words:
+1: trump (38 times)
+2: s (24 times)
+3: his (20 times)
+4: he (18 times)
+5: bond (17 times)
+6: million (14 times)
+7: or (11 times)
+8: it (10 times)
+9: cash (10 times)
+10: will (10 times)
+
+Article 93: E. Jean Carroll's lawyers demand Trump ponies up $83.3 million verdict and say he needs to prove he has the money
+URL: https://www.businessinsider.com/carroll-lawyers-demand-trump-pay-verdict-money-appeal-2024-2
+Top words:
+1: he (23 times)
+2: his (16 times)
+3: trump (14 times)
+4: carroll (9 times)
+5: s (9 times)
+6: case (8 times)
+7: kaplan (7 times)
+8: million (6 times)
+9: money (6 times)
+10: or (6 times)
+
+Article 94: Here are Washington's 2024 presidential primary results
+URL: https://www.npr.org/2024/03/12/1237467823/washington-primary-election-results-2024
+Top words:
+1: getty (7 times)
+2: images (7 times)
+3: by (5 times)
+4: ap (3 times)
+5: president (2 times)
+6: biden (2 times)
+7: are (2 times)
+8: an (2 times)
+9: designed (2 times)
+10: developed (2 times)
+
+Article 95: Here are Georgia's 2024 presidential primary results
+URL: https://www.npr.org/2024/03/12/1237445491/georgia-primary-election-results-2024
+Top words:
+1: getty (7 times)
+2: images (7 times)
+3: by (5 times)
+4: ap (3 times)
+5: democratic (2 times)
+6: less (2 times)
+7: designed (2 times)
+8: developed (2 times)
+9: hilary (2 times)
+10: fung (2 times)
+
+Article 96: Trump undoubtedly controls the GOP, but the TikTok vote shows Republicans won't always follow him in lockstep
+URL: https://www.businessinsider.com/tiktok-vote-shows-trumps-grip-on-the-gop-isnt-absolute-2024-3
+Top words:
+1: trump (20 times)
+2: s (13 times)
+3: his (12 times)
+4: tiktok (9 times)
+5: be (7 times)
+6: there (7 times)
+7: former (6 times)
+8: president (6 times)
+9: has (6 times)
+10: house (6 times)
+
+Article 97: Here are key results in Mississippi's 2024 primaries
+URL: https://www.npr.org/2024/03/12/1237464615/mississippi-primary-election-results-2024
+Top words:
+1: getty (7 times)
+2: images (7 times)
+3: by (5 times)
+4: ap (3 times)
+5: u (2 times)
+6: s (2 times)
+7: designed (2 times)
+8: developed (2 times)
+9: hilary (2 times)
+10: fung (2 times)
+
+Article 98: A Trump vs Biden rematch is on, and it's a showdown most Americans didn't want
+URL: https://www.businessinsider.com/trump-biden-clinch-party-nominations-race-few-people-want-president-2024-3
+Top words:
+1: trump (14 times)
+2: biden (12 times)
+3: his (11 times)
+4: voters (5 times)
+5: democrats (5 times)
+6: s (5 times)
+7: who (5 times)
+8: us (5 times)
+9: was (5 times)
+10: t (5 times)
+
+Article 99: Trump confirms he met with Elon Musk, but they disagree about electric cars
+URL: https://www.businessinsider.com/trump-disagrees-elon-musk-electric-cars-meeting-2024-3
+Top words:
+1: he (25 times)
+2: trump (15 times)
+3: said (11 times)
+4: his (10 times)
+5: musk (9 times)
+6: electric (8 times)
+7: all (7 times)
+8: t (6 times)
+9: s (6 times)
+10: president (5 times)
+
+Article 100: Trump says banning TikTok would make Facebook — an 'enemy of the people' — stronger
+URL: https://www.businessinsider.com/trump-tiktok-ban-enemy-of-the-people-facebook-stronger-2024-3
+Top words:
+1: tiktok (9 times)
+2: s (7 times)
+3: trump (6 times)
+4: facebook (5 times)
+5: there (5 times)
+6: lot (5 times)
+7: us (4 times)
+8: are (4 times)
+9: but (3 times)
+10: people (3 times)
+
