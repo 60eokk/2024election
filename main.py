@@ -39,11 +39,16 @@ def read_top_aggregated_rankings(filename, top_n=10):
     rankings = {}
     with open(filename, 'r') as f:
         for line in f.readlines()[:top_n]:  # Only read the top N lines
-            parts = line.split(':')
-            word = parts[0].strip()
-            total_ranking = int(parts[1].split()[0].strip("()"))  # Adjust based on your file format
-            rankings[word] = total_ranking
+            parts = line.strip().split(':')
+            if len(parts) >= 2:
+                word = parts[0].strip()
+                # Find digits in the remainder of the line, assuming the ranking is the first integer found
+                match = re.search(r'\d+', parts[1])
+                if match:
+                    total_ranking = int(match.group(0))
+                    rankings[word] = total_ranking
     return rankings
+
 
 
 def plot_keyword_rankings(rankings, keyword):
