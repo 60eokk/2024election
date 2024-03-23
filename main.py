@@ -7,7 +7,7 @@ import re
 import json
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime  
 
 def count_words(text):
     words = re.findall(r'\b\w+\b', text.lower())
