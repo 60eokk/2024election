@@ -19,7 +19,7 @@ def fetch_articles(api_key, keyword, page_size=10):
     
     try:
         response = requests.get(constructed_url, timeout=10)
-        response.raise_for_status()  # Raise an error for bad status codes
+        response.raise_for_status()
         data = response.json()
         articles = data['response']['results']
         if not articles:
@@ -31,16 +31,17 @@ def fetch_articles(api_key, keyword, page_size=10):
         print(f"HTTP error occurred while fetching articles for '{keyword}': {http_err}")
     except requests.exceptions.RequestException as err:
         print(f"Request error while fetching articles for '{keyword}': {err}")
-    return []  # Return an empty list in case of error
-
+    return []
 
 def count_words(text):
+    """Count words in a text, excluding common stop words."""
     stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with"])
     words = re.findall(r'\b\w+\b', text.lower())
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
 
 def aggregate_rankings(articles):
+    """Aggregate word rankings from a list of articles."""
     print(f"Aggregating rankings for {len(articles)} articles...")
     word_ranking_sums = Counter()
     for title, body in articles:
@@ -49,6 +50,7 @@ def aggregate_rankings(articles):
     return word_ranking_sums.most_common(10)
 
 def plot_keyword_rankings(rankings, keyword):
+    """Plot a bar graph of the top word rankings for a given keyword."""
     if rankings:
         words, scores = zip(*rankings)
         plt.figure(figsize=(10, 6))
@@ -58,20 +60,27 @@ def plot_keyword_rankings(rankings, keyword):
         plt.title(f'Top Word Rankings for {keyword}')
         plt.xticks(rotation=45)
         plt.tight_layout()
-        plt.show()
     else:
         print(f"No data to plot for '{keyword}'.")
 
 def main():
     api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
+    rankings_data = []
     keywords = ['Trump', 'Biden']
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=10)
         if articles:
             rankings = aggregate_rankings(articles)
-            plot_keyword_rankings(rankings, keyword)
+            rankings_data.append((rankings, keyword))
         else:
             print(f"No articles fetched for '{keyword}', skipping plotting.")
+    
+    # Plotting all keywords after fetching and processing
+    for rankings, keyword in rankings_data:
+        plot_keyword_rankings(rankings, keyword)
+    
+    # Display all figures
+    plt.show()
 
 if __name__ == "__main__":
     main()
