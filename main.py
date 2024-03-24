@@ -35,7 +35,7 @@ def fetch_articles(api_key, keyword, page_size=10):
 
 def count_words(text):
     """Count words in a text, excluding common stop words."""
-    stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with"])
+    stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www"])
     words = re.findall(r'\b\w+\b', text.lower())
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
