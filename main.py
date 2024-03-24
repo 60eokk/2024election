@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 
-def fetch_articles(api_key, keyword, page_size=10):
+def fetch_articles(api_key, keyword, page_size):
     """Fetch articles from The Guardian API for a given keyword."""
     print(f"Fetching articles for '{keyword}'...")
     base_url = "https://content.guardianapis.com/search"
@@ -47,7 +47,7 @@ def aggregate_rankings(articles):
     for title, body in articles:
         word_counts = count_words(body)
         word_ranking_sums.update(word_counts)
-    return word_ranking_sums.most_common(10)
+    return word_ranking_sums.most_common(20)
 
 def plot_keyword_rankings(rankings, keyword):
     """Plot a bar graph of the top word rankings for a given keyword."""
@@ -68,7 +68,7 @@ def main():
     rankings_data = []
     keywords = ['Trump', 'Biden']
     for keyword in keywords:
-        articles = fetch_articles(api_key, keyword, page_size=10)
+        articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
             rankings = aggregate_rankings(articles)
             rankings_data.append((rankings, keyword))
