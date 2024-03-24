@@ -1,10 +1,10 @@
 trump: 96
 s: 95
-donald: 92
+donald: 93
 president: 89
-as: 86
-an: 86
-he: 85
+as: 85
+he: 84
+an: 83
 has: 83
-his: 82
 from: 81
+former: 81

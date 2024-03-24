@@ -29,10 +29,11 @@ def fetch_article_text(url):
             return article_text
         else:
             print(f"Failed to fetch the article: HTTP {response.status_code}")
-            return ""
+            return ""  # Return an empty string for articles that can't be fetched
     except Exception as e:
         print(f"An error occurred: {e}")
-        return ""
+        return ""  # Return an empty string for any other errors
+
 
 def read_top_aggregated_rankings(filename, top_n=10):
     rankings = {}
