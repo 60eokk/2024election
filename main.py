@@ -13,8 +13,8 @@ def fetch_articles(api_key, keyword, page_size):
         'q': keyword,
         'page-size': page_size,
         'show-fields': 'body',  # Request the body field to get article text
-        'from-date' : '2020-01-01',
-        'to-date' : '2020-12-31'
+        'from-date' : '2016-01-01',
+        'to-date' : '2016-12-31'
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
     print(f"Constructed URL for '{keyword}': {constructed_url}")  # Print the constructed URL for manual checking
@@ -37,9 +37,9 @@ def fetch_articles(api_key, keyword, page_size):
 
 def count_words(text):
     """Count words in a text, excluding common stop words."""
-    stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block", "class", "div"])
-    # for 2016election stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block"])
-    # stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block"])
+    # for 2020election stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block", "class", "div"])
+    stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block", "div"])
+    # for 2012election stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block"])
     words = re.findall(r'\b\w+\b', text.lower())
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
@@ -70,7 +70,7 @@ def plot_keyword_rankings(rankings, keyword):
 def main():
     api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
     rankings_data = []
-    keywords = ['Biden', 'Trump']
+    keywords = ['Trump', 'Clinton']
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
