@@ -12,7 +12,9 @@ def fetch_articles(api_key, keyword, page_size):
         'api-key': api_key,
         'q': keyword,
         'page-size': page_size,
-        'show-fields': 'body'  # Request the body field to get article text
+        'show-fields': 'body',  # Request the body field to get article text
+        'from-date' : '2020-01-01',
+        'to-date' : '2020-12-31'
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
     print(f"Constructed URL for '{keyword}': {constructed_url}")  # Print the constructed URL for manual checking
