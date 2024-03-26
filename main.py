@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 import nltk
+import plotly.express as px
+from textblob import TextBlob
 
 
 def fetch_articles(api_key, keyword, page_size):
@@ -52,49 +54,45 @@ def count_words(text):
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
 
-def aggregate_rankings(articles):
+def analyze_sentiment(text):
+    blob = TextBlob(text)
+    return blob.sentiment.polarity
+
+def aggregate_rankings(articles, keyword):  # Added keyword as a parameter
     """Aggregate word rankings from a list of articles."""
     print(f"Aggregating rankings for {len(articles)} articles...")
     word_ranking_sums = Counter()
+    sentiments = []
     for title, body in articles:
         word_counts = count_words(body)
         word_ranking_sums.update(word_counts)
-    return word_ranking_sums.most_common(20)
+        sentiment = analyze_sentiment(body)
+        sentiments.append(sentiment)
+    average_sentiment = sum(sentiments) / len(sentiments) if sentiments else 0
+    print(f"Average sentiment for '{keyword}': {average_sentiment}")  # keyword is now defined in this scope
+    return word_ranking_sums.most_common(20), average_sentiment
 
-def plot_keyword_rankings(rankings, keyword):
-    """Plot a bar graph of the top word rankings for a given keyword."""
+
+def plot_keyword_rankings_interactive(rankings, keyword):
     if rankings:
         words, scores = zip(*rankings)
-        plt.figure(figsize=(10, 6))
-        plt.bar(words, scores, color='skyblue')
-        plt.xlabel('Words')
-        plt.ylabel('Frequency')
-        plt.title(f'Top Word Rankings for {keyword}')
-        plt.xticks(rotation=45)
-        plt.tight_layout()
+        fig = px.bar(x=words, y=scores, title=f'Top Word Rankings for {keyword}', labels={'x':'Words', 'y':'Frequency'})
+        fig.show()
     else:
         print(f"No data to plot for '{keyword}'.")
 
-        
-
 def main():
     api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
-    rankings_data = []
     keywords = ['Trump', 'Clinton']
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
-            rankings = aggregate_rankings(articles)
-            rankings_data.append((rankings, keyword))
+            rankings, average_sentiment = aggregate_rankings(articles, keyword)
+            print(f"Plotting interactive rankings for {keyword}")
+            plot_keyword_rankings_interactive(rankings, keyword)  # Use the interactive plotting function
+            print(f"Average sentiment for {keyword}: {average_sentiment}")
         else:
             print(f"No articles fetched for '{keyword}', skipping plotting.")
-    
-    # Plotting all keywords after fetching and processing
-    for rankings, keyword in rankings_data:
-        plot_keyword_rankings(rankings, keyword)
-    
-    # Display all figures
-    plt.show()
 
 if __name__ == "__main__":
     main()
