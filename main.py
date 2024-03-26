@@ -3,6 +3,9 @@ from collections import Counter
 import re
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
+from nltk.corpus import stopwords
+import nltk
+
 
 def fetch_articles(api_key, keyword, page_size):
     """Fetch articles from The Guardian API for a given keyword."""
@@ -35,11 +38,16 @@ def fetch_articles(api_key, keyword, page_size):
         print(f"Request error while fetching articles for '{keyword}': {err}")
     return []
 
+
+nltk.download('stopwords')
+
 def count_words(text):
     """Count words in a text, excluding common stop words."""
-    # for 2020election stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block", "class", "div"])
-    stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block", "div"])
-    # for 2012election stop_words = set(["the", "to", "of", "a", "that", "and", "in", "is", "for", "on", "with", "https", "com", "theguardian", "href", "www", "h2", "id", "10", "class", "block"])
+    stop_words = set(stopwords.words('english'))
+    # Extend the stop words list with custom words specific to your dataset
+    custom_stop_words = ["https", "com", "theguardian", "href", "www", "class", "block", "time", "div", "id", "h2", "figure", "elements"]
+    stop_words.update(custom_stop_words)
+    
     words = re.findall(r'\b\w+\b', text.lower())
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
@@ -66,6 +74,8 @@ def plot_keyword_rankings(rankings, keyword):
         plt.tight_layout()
     else:
         print(f"No data to plot for '{keyword}'.")
+
+        
 
 def main():
     api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
