@@ -2,7 +2,7 @@ import requests
 from collections import Counter
 import re
 from bs4 import BeautifulSoup
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 import nltk
 import plotly.express as px
@@ -18,8 +18,8 @@ def fetch_articles(api_key, keyword, page_size):
         'q': keyword,
         'page-size': page_size,
         'show-fields': 'body',  # Request the body field to get article text
-        'from-date' : '2016-01-01',
-        'to-date' : '2016-12-31'
+        'from-date' : '2012-01-01',
+        'to-date' : '2012-12-31'
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
     print(f"Constructed URL for '{keyword}': {constructed_url}")  # Print the constructed URL for manual checking
@@ -83,7 +83,7 @@ def plot_keyword_rankings_interactive(rankings, keyword):
 
 def main():
     api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
-    keywords = ['Trump', 'Clinton']
+    keywords = ['Obama', 'Romney']
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
