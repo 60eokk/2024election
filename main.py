@@ -7,6 +7,7 @@ from nltk.corpus import stopwords
 import nltk
 import plotly.express as px
 from textblob import TextBlob
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 def fetch_articles(api_key, keyword, page_size):
