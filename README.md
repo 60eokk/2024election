@@ -56,3 +56,7 @@ https://www.presidency.ucsb.edu/advanced-search?field-keywords=donald+trump&fiel
 # ANOTHER PROBLEM:
 NEWSAPI's free plan only gives 1 month old articles.
 github not working?
+
+
+# VISUALIZATION & RESULTS
+https://docs.google.com/document/d/1O4LLFkadXbtYKDyWrAESpWI6goYGWNZUTmyFYXvSvSM/edit
