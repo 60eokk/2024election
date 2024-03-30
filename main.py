@@ -2,8 +2,8 @@ import requests
 from collections import Counter
 import re
 from bs4 import BeautifulSoup
-from nltk.corpus import stopwords
 import nltk
+from nltk.corpus import stopwords
 import plotly.express as px
 from textblob import TextBlob
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -12,7 +12,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 nltk.download('stopwords')
 
 def fetch_articles(api_key, keyword, page_size):
-    """Fetch articles from The Guardian API for a given keyword."""
     print(f"Fetching articles for '{keyword}'...")
     base_url = "https://content.guardianapis.com/search"
     params = {
@@ -43,7 +42,6 @@ def fetch_articles(api_key, keyword, page_size):
     return []
 
 def count_words(text):
-    """Count words in a text, excluding common stop words."""
     stop_words = set(stopwords.words('english'))
     custom_stop_words = ["https", "com", "theguardian", "href", "www", "class", "block", "time", "div", "id", "h2", "figure", "elements"]
     stop_words.update(custom_stop_words)
@@ -53,7 +51,6 @@ def count_words(text):
     return Counter(filtered_words)
 
 def extract_keywords_tfidf(documents, top_n=10):
-    """Extract keywords from documents using TF-IDF."""
     vectorizer = TfidfVectorizer(max_features=500, stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(documents)
     feature_names = vectorizer.get_feature_names_out()
@@ -62,12 +59,10 @@ def extract_keywords_tfidf(documents, top_n=10):
     return keywords
 
 def analyze_sentiment(text):
-    """Analyze the sentiment polarity of the text."""
     blob = TextBlob(text)
     return blob.sentiment.polarity
 
 def aggregate_rankings(articles, keyword):
-    """Aggregate word rankings from a list of articles and analyze sentiment."""
     print(f"Aggregating rankings for {len(articles)} articles...")
     word_ranking_sums = Counter()
     sentiments = []
@@ -81,7 +76,6 @@ def aggregate_rankings(articles, keyword):
     return word_ranking_sums.most_common(20), average_sentiment
 
 def plot_keyword_rankings_interactive(rankings, keyword):
-    """Plot the keyword rankings interactively using Plotly."""
     if rankings:
         words, scores = zip(*rankings)
         fig = px.bar(x=words, y=scores, title=f'Top Word Rankings for {keyword}', labels={'x':'Words', 'y':'Frequency'})
@@ -90,19 +84,16 @@ def plot_keyword_rankings_interactive(rankings, keyword):
         print(f"No data to plot for '{keyword}'.")
 
 def main():
-    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'
+    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
     keywords = ['Obama', 'Romney']
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
             article_bodies = [body for _, body in articles]
             tfidf_keywords = extract_keywords_tfidf(article_bodies)
-            # Corrected the line below
-            print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Corrected closing the print statement
+            print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
             rankings, average_sentiment = aggregate_rankings(articles, keyword)
-            print(f"Plotting interactive rankings for {keyword}")
             plot_keyword_rankings_interactive(rankings, keyword)
-            print(f"Average sentiment for {keyword}: {average_sentiment}")
         else:
             print(f"No articles fetched for '{keyword}', skipping plotting.")
 
