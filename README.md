@@ -60,3 +60,4 @@ github not working?
 
 # VISUALIZATION & RESULTS
 https://docs.google.com/document/d/1O4LLFkadXbtYKDyWrAESpWI6goYGWNZUTmyFYXvSvSM/edit
+# changes to docs
