@@ -24,7 +24,7 @@ def fetch_articles(api_key, keyword, page_size):
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
     print(f"Constructed URL for '{keyword}': {constructed_url}")
-    
+   j 
     try:
         response = requests.get(constructed_url, timeout=10)
         response.raise_for_status()
