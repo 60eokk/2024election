@@ -62,3 +62,5 @@ github not working?
 https://docs.google.com/document/d/1O4LLFkadXbtYKDyWrAESpWI6goYGWNZUTmyFYXvSvSM/edit
 # changes to docs 
 # trying to use other methods and added to docs
+
+# Currently making the way to document the results
