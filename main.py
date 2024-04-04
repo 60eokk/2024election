@@ -7,6 +7,9 @@ from nltk.corpus import stopwords
 import plotly.express as px
 from textblob import TextBlob
 from sklearn.feature_extraction.text import TfidfVectorizer
+# Added imports for LDA
+from sklearn.decomposition import LatentDirichletAllocation
+from sklearn.feature_extraction.text import CountVectorizer
 
 # Ensure NLTK resources are downloaded
 nltk.download('stopwords')
@@ -24,7 +27,7 @@ def fetch_articles(api_key, keyword, page_size):
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
     print(f"Constructed URL for '{keyword}': {constructed_url}")
-   j 
+   
     try:
         response = requests.get(constructed_url, timeout=10)
         response.raise_for_status()
@@ -62,6 +65,15 @@ def analyze_sentiment(text):
     blob = TextBlob(text)
     return blob.sentiment.polarity
 
+def perform_lda(documents, n_topics=5, n_words=10):
+    count_vectorizer = CountVectorizer(max_df=0.95, min_df=2, stop_words='english')
+    doc_term_matrix = count_vectorizer.fit_transform(documents)
+    lda = LatentDirichletAllocation(n_components=n_topics, random_state=0)
+    lda.fit(doc_term_matrix)
+    words = count_vectorizer.get_feature_names_out()
+    topics = {i: [words[index] for index in topic.argsort()[:-n_words - 1:-1]] for i, topic in enumerate(lda.components_)}
+    return topics
+
 def aggregate_rankings(articles, keyword):
     print(f"Aggregating rankings for {len(articles)} articles...")
     word_ranking_sums = Counter()
@@ -84,7 +96,7 @@ def plot_keyword_rankings_interactive(rankings, keyword):
         print(f"No data to plot for '{keyword}'.")
 
 def main():
-    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'  # Replace with your actual API key
+    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c' 
     keywords = ['Obama', 'Romney']
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
@@ -92,6 +104,10 @@ def main():
             article_bodies = [body for _, body in articles]
             tfidf_keywords = extract_keywords_tfidf(article_bodies)
             print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
+            
+            lda_topics = perform_lda(article_bodies)
+            print(f"LDA Topics for {keyword}: {lda_topics}")
+
             rankings, average_sentiment = aggregate_rankings(articles, keyword)
             plot_keyword_rankings_interactive(rankings, keyword)
         else:
