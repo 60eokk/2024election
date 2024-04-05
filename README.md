@@ -66,3 +66,4 @@ https://docs.google.com/document/d/1O4LLFkadXbtYKDyWrAESpWI6goYGWNZUTmyFYXvSvSM/
 # Currently making the way to document the results
 # LDA Method:
 "topic modeling". which is more than just TF-IDF method that have been focusing only on frequently used words
+# Made commits but not working: just putting comments here to show up in github
