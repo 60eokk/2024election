@@ -67,3 +67,49 @@ https://docs.google.com/document/d/1O4LLFkadXbtYKDyWrAESpWI6goYGWNZUTmyFYXvSvSM/
 # LDA Method:
 "topic modeling". which is more than just TF-IDF method that have been focusing only on frequently used words
 # Made commits but not working: just putting comments here to show up in github
+
+# How can I make it a better code?
+
+Refinement of Data Preprocessing:
+
+Improve text cleaning to remove non-relevant words (HTML tags, common words) more effectively.
+Implement lemmatization to consolidate different forms of the same word into a single term (e.g., "running" and "ran" to "run").
+Advanced Text Analysis:
+
+Apply Named Entity Recognition (NER) to identify and compare the prominence of people, organizations, and locations mentioned alongside each candidate.
+Utilize part-of-speech tagging to understand the context in which certain words are used.
+Sentiment Analysis Over Time:
+
+Conduct a time-series analysis of sentiment associated with each candidate.
+Compare the sentiment trend with key events during the campaign to see if there's a correlation.
+Topic Modeling:
+
+Perform Latent Dirichlet Allocation (LDA) or Non-Negative Matrix Factorization (NMF) to discover topics within the articles.
+Analyze the evolution of topics over time and compare the focus areas between different candidates.
+Predictive Modeling:
+
+Build a model to predict election outcomes based on news article analysis. Compare the model's predictions with actual historical outcomes.
+User Interface:
+
+Develop a web application that allows users to enter a candidate's name and get a visual representation of the analysis.
+Provide interactive visualizations that users can engage with to explore the data further.
+Comparative Analysis:
+
+Expand the dataset to include articles from multiple news sources to compare the representation of candidates across the media spectrum.
+Analyze the differences in language used by different political affiliations or news outlets.
+Data Visualization:
+
+Use more advanced visualization tools (like D3.js) for creating interactive and engaging data presentations.
+Implement dashboards that provide insights at a glance.
+Data Collection Expansion:
+
+Incorporate social media data to gauge public sentiment and compare it with the media portrayal.
+Use APIs from Twitter, Reddit, or other platforms for a more comprehensive analysis.
+Documentation and Reporting:
+
+Write detailed documentation about your methodology, data sources, and findings.
+Create a report or a series of blog posts that narrate the story your data tells.
+Code Quality:
+
+Refactor the code to improve readability and maintainability.
+Write unit tests to ensure that each part of your codebase works correctly after changes.
