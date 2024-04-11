@@ -46,7 +46,7 @@ def fetch_articles(api_key, keyword, page_size):
 
 def count_words(text):
     stop_words = set(stopwords.words('english'))
-    custom_stop_words = ["https", "com", "theguardian", "href", "www", "class", "block", "time", "div", "id", "h2", "figure", "elements"]
+    custom_stop_words = ["https", "com", "theguardian", "href", "www", "class", "block", "time", "div", "id", "h2", "figure", "elements", "the"]
     stop_words.update(custom_stop_words)
     
     words = re.findall(r'\b\w+\b', text.lower())
