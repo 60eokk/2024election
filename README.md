@@ -2,7 +2,7 @@
 1. which python
 2. python --version
 3. pip list 
-4. python -m pip list: ##To ensure you're using the pip that corresponds to your python (or python3), you can explicitly call pip using Python with this##   (number3 and number4 should both have bs4. if one doesn't, it means they are in separate environments)
+4. python -m pip list: To ensure you're using the pip that corresponds to your python (or python3), you can explicitly call pip using Python with this   (number3 and number4 should both have bs4. if one doesn't, it means they are in separate environments)
 5. python -m pip install xxxxx
 
 
