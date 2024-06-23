@@ -121,7 +121,7 @@ def main():
             rankings, average_sentiment = aggregate_rankings(articles, keyword)
             plot_keyword_rankings_interactive(rankings, keyword)
         else:
-            print(f"No articles fetched for '{keyword}', skipping plotting.")
+            print(f"No articles fetched for '{keyword}'")
 
 
 if __name__ == "__main__":
