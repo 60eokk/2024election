@@ -6,9 +6,11 @@ from nltk.corpus import stopwords
 import plotly.express as px
 from textblob import TextBlob
 from sklearn.feature_extraction.text import TfidfVectorizer
+from bs4 import BeautifulSoup
 # Added imports for LDA
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
+
 
 # Ensure NLTK resources are downloaded
 nltk.download('stopwords')
@@ -43,12 +45,21 @@ def fetch_articles(api_key, keyword, page_size):
         print(f"Request error while fetching articles for '{keyword}': {err}")
     return []
 
+
+def clean_html(raw_html):
+    soup = BeautifulSoup(raw_html, 'html.parser')
+    return soup.get_text()
+
+
 def count_words(text):
+    # Clean the text to remove HTML tags
+    cleaned_text = clean_html(text)
+
     stop_words = set(stopwords.words('english'))
-    custom_stop_words = ["https", "com", "theguardian", "href", "www", "class", "block", "time", "div", "id", "h2", "figure", "elements", "the"]
+    custom_stop_words = ["theguardian", "www", "figure", "the"]
     stop_words.update(custom_stop_words)
     
-    words = re.findall(r'\b\w+\b', text.lower())
+    words = re.findall(r'\b\w+\b', cleaned_text.lower())
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
 
