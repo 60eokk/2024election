@@ -56,7 +56,7 @@ def count_words(text):
     cleaned_text = clean_html(text)
 
     stop_words = set(stopwords.words('english'))
-    custom_stop_words = ["theguardian", "www", "figure", "the"]
+    custom_stop_words = ["theguardian", "www", "figure", "the", "mr", "said", "would"]
     stop_words.update(custom_stop_words)
     
     words = re.findall(r'\b\w+\b', cleaned_text.lower())
