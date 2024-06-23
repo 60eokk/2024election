@@ -59,16 +59,16 @@ def count_words(text):
     custom_stop_words = ["theguardian", "www", "figure", "the", "mr", "said", "would"]
     stop_words.update(custom_stop_words)
     
-    words = re.findall(r'\b\w+\b', cleaned_text.lower())
+    words = re.findall(r'\b\w+\b', cleaned_text.lower()) # returns list of all "words" easily (re module)
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
 
-def tfidf(documents, top_n=10):
+def tfidf(documents):
     vectorizer = TfidfVectorizer(max_features=500, stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(documents)
     feature_names = vectorizer.get_feature_names_out()
     dense = tfidf_matrix.todense().tolist()
-    keywords = [sorted(zip(feature_names, doc), key=lambda x: x[1], reverse=True)[:top_n] for doc in dense]
+    keywords = [sorted(zip(feature_names, doc), key=lambda x: x[1], reverse=True)[:20] for doc in dense] # pairing in descending order
     return keywords
 
 def analyze_sentiment(text):
