@@ -1,7 +1,6 @@
 import requests
 from collections import Counter
 import re
-from bs4 import BeautifulSoup
 import nltk
 from nltk.corpus import stopwords
 import plotly.express as px
@@ -30,7 +29,7 @@ def fetch_articles(api_key, keyword, page_size):
    
     try:
         response = requests.get(constructed_url, timeout=10)
-        response.raise_for_status()
+        response.raise_for_status() # returns HTTPError object if error occurs
         data = response.json()
         articles = data['response']['results']
         if not articles:
@@ -53,26 +52,26 @@ def count_words(text):
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
 
-def extract_keywords_tfidf(documents, top_n=10):
-    vectorizer = TfidfVectorizer(max_features=500, stop_words='english')
-    tfidf_matrix = vectorizer.fit_transform(documents)
-    feature_names = vectorizer.get_feature_names_out()
-    dense = tfidf_matrix.todense().tolist()
-    keywords = [sorted(zip(feature_names, doc), key=lambda x: x[1], reverse=True)[:top_n] for doc in dense]
-    return keywords
+# def extract_keywords_tfidf(documents, top_n=10):
+#     vectorizer = TfidfVectorizer(max_features=500, stop_words='english')
+#     tfidf_matrix = vectorizer.fit_transform(documents)
+#     feature_names = vectorizer.get_feature_names_out()
+#     dense = tfidf_matrix.todense().tolist()
+#     keywords = [sorted(zip(feature_names, doc), key=lambda x: x[1], reverse=True)[:top_n] for doc in dense]
+#     return keywords
 
 def analyze_sentiment(text):
     blob = TextBlob(text)
     return blob.sentiment.polarity
 
-def perform_lda(documents, n_topics=5, n_words=10):
-    count_vectorizer = CountVectorizer(max_df=0.95, min_df=2, stop_words='english')
-    doc_term_matrix = count_vectorizer.fit_transform(documents)
-    lda = LatentDirichletAllocation(n_components=n_topics, random_state=0)
-    lda.fit(doc_term_matrix)
-    words = count_vectorizer.get_feature_names_out()
-    topics = {i: [words[index] for index in topic.argsort()[:-n_words - 1:-1]] for i, topic in enumerate(lda.components_)}
-    return topics
+# def perform_lda(documents, n_topics=5, n_words=10):
+#     count_vectorizer = CountVectorizer(max_df=0.95, min_df=2, stop_words='english')
+#     doc_term_matrix = count_vectorizer.fit_transform(documents)
+#     lda = LatentDirichletAllocation(n_components=n_topics, random_state=0)
+#     lda.fit(doc_term_matrix)
+#     words = count_vectorizer.get_feature_names_out()
+#     topics = {i: [words[index] for index in topic.argsort()[:-n_words - 1:-1]] for i, topic in enumerate(lda.components_)}
+#     return topics
 
 def aggregate_rankings(articles, keyword):
     print(f"Aggregating rankings for {len(articles)} articles...")
@@ -101,17 +100,18 @@ def main():
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
-            article_bodies = [body for _, body in articles]
-            tfidf_keywords = extract_keywords_tfidf(article_bodies)
-            print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
+            # article_bodies = [body for _, body in articles]
+            # tfidf_keywords = extract_keywords_tfidf(article_bodies)
+            # print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
             
-            lda_topics = perform_lda(article_bodies)
-            print(f"LDA Topics for {keyword}: {lda_topics}")
+            # lda_topics = perform_lda(article_bodies)
+            # print(f"LDA Topics for {keyword}: {lda_topics}")
 
             rankings, average_sentiment = aggregate_rankings(articles, keyword)
             plot_keyword_rankings_interactive(rankings, keyword)
         else:
             print(f"No articles fetched for '{keyword}', skipping plotting.")
+
 
 if __name__ == "__main__":
     main()
