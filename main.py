@@ -27,7 +27,7 @@ def fetch_articles(api_key, keyword, page_size):
         'to-date': '2012-12-31'
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
-    print(f"Constructed URL for '{keyword}': {constructed_url}")
+    # print(f"Constructed URL for '{keyword}': {constructed_url}")
    
     try:
         response = requests.get(constructed_url, timeout=10)
@@ -63,13 +63,13 @@ def count_words(text):
     filtered_words = [word for word in words if word not in stop_words and len(word) > 1]
     return Counter(filtered_words)
 
-# def extract_keywords_tfidf(documents, top_n=10):
-#     vectorizer = TfidfVectorizer(max_features=500, stop_words='english')
-#     tfidf_matrix = vectorizer.fit_transform(documents)
-#     feature_names = vectorizer.get_feature_names_out()
-#     dense = tfidf_matrix.todense().tolist()
-#     keywords = [sorted(zip(feature_names, doc), key=lambda x: x[1], reverse=True)[:top_n] for doc in dense]
-#     return keywords
+def tfidf(documents, top_n=10):
+    vectorizer = TfidfVectorizer(max_features=500, stop_words='english')
+    tfidf_matrix = vectorizer.fit_transform(documents)
+    feature_names = vectorizer.get_feature_names_out()
+    dense = tfidf_matrix.todense().tolist()
+    keywords = [sorted(zip(feature_names, doc), key=lambda x: x[1], reverse=True)[:top_n] for doc in dense]
+    return keywords
 
 def analyze_sentiment(text):
     blob = TextBlob(text)
@@ -111,9 +111,9 @@ def main():
     for keyword in keywords:
         articles = fetch_articles(api_key, keyword, page_size=50)
         if articles:
-            # article_bodies = [body for _, body in articles]
-            # tfidf_keywords = extract_keywords_tfidf(article_bodies)
-            # print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
+            article_bodies = [body for _, body in articles]
+            tfidf_keywords = tfidf(article_bodies)
+            print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
             
             # lda_topics = perform_lda(article_bodies)
             # print(f"LDA Topics for {keyword}: {lda_topics}")
