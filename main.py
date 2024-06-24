@@ -15,29 +15,27 @@ from sklearn.feature_extraction.text import CountVectorizer
 # Ensure NLTK resources are downloaded
 nltk.download('stopwords')
 
-def fetch_articles(api_key, keyword, page_size):
-    print(f"Fetching articles for '{keyword}'...")
+def fetch_articles(api_key, keyword, from_date, to_date, page_size):
+    print(f"Fetching articles for '{keyword}' from {from_date} to {to_date}...")
     base_url = "https://content.guardianapis.com/search"
     params = {
         'api-key': api_key,
         'q': keyword,
         'page-size': page_size,
         'show-fields': 'body',
-        'from-date': '2012-01-01',
-        'to-date': '2012-12-31'
+        'from-date': from_date,
+        'to-date': to_date
     }
     constructed_url = requests.Request('GET', base_url, params=params).prepare().url
-    # print(f"Constructed URL for '{keyword}': {constructed_url}")
-   
     try:
         response = requests.get(constructed_url, timeout=10)
         response.raise_for_status() # returns HTTPError object if error occurs
         data = response.json()
         articles = data['response']['results']
         if not articles:
-            print(f"No articles found for '{keyword}'.")
+            print(f"No articles found for '{keyword}' from {from_date} to {to_date}.")
             return []
-        print(f"Fetched {len(articles)} articles for '{keyword}'.")
+        print(f"Fetched {len(articles)} articles for '{keyword}' from {from_date} to {to_date}.")
         return [(article['webTitle'], article['fields']['body']) for article in articles if 'body' in article['fields']]
     except requests.exceptions.HTTPError as http_err:
         print(f"HTTP error occurred while fetching articles for '{keyword}': {http_err}")
@@ -113,22 +111,25 @@ def plot_keyword_rankings_interactive(rankings, keyword):
 
 
 def main():
-    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c' 
-    keywords = ['Obama', 'Romney']
-    for keyword in keywords:
-        articles = fetch_articles(api_key, keyword, page_size=50)
-        if articles:
-            article_bodies = [body for _, body in articles]
-            tfidf_keywords = tfidf(article_bodies)
-            print(f"TF-IDF Keywords for {keyword}: {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
-            
-            lda_topics = do_lda(article_bodies)
-            print(f"LDA Topics for {keyword}: {lda_topics}")
+    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'
+    keyword = input("Enter the keyword to search for: ")
+    from_date = input("Enter the start date (YYYY-MM-DD): ")
+    to_date = input("Enter the end date (YYYY-MM-DD): ")
+    page_size = 50
+    
+    articles = fetch_articles(api_key, keyword, from_date, to_date, page_size)
+    if articles:
+        article_bodies = [body for _, body in articles]
+        tfidf_keywords = tfidf(article_bodies)
+        print(f"TF-IDF Keywords for '{keyword}': {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
+        
+        lda_topics = do_lda(article_bodies)
+        print(f"LDA Topics for '{keyword}': {lda_topics}")
 
-            rankings, average_sentiment = aggregate_rankings(articles, keyword)
-            plot_keyword_rankings_interactive(rankings, keyword)
-        else:
-            print(f"No articles fetched for '{keyword}'")
+        rankings, average_sentiment = aggregate_rankings(articles, keyword)
+        plot_keyword_rankings_interactive(rankings, keyword)
+    else:
+        print(f"No articles fetched for '{keyword}' from {from_date} to {to_date}")
 
 
 if __name__ == "__main__":
