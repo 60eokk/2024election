@@ -111,25 +111,36 @@ def plot_keyword_rankings_interactive(rankings, keyword):
 
 
 def main():
-    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'
-    keyword = input("Enter the keyword to search for: ")
-    from_date = input("Enter the start date (YYYY-MM-DD): ")
-    to_date = input("Enter the end date (YYYY-MM-DD): ")
-    page_size = 50
-    
-    articles = fetch_articles(api_key, keyword, from_date, to_date, page_size)
-    if articles:
-        article_bodies = [body for _, body in articles]
-        tfidf_keywords = tfidf(article_bodies)
-        print(f"TF-IDF Keywords for '{keyword}': {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
-        
-        lda_topics = do_lda(article_bodies)
-        print(f"LDA Topics for '{keyword}': {lda_topics}")
 
-        rankings, average_sentiment = aggregate_rankings(articles, keyword)
-        plot_keyword_rankings_interactive(rankings, keyword)
-    else:
-        print(f"No articles fetched for '{keyword}' from {from_date} to {to_date}")
+    api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'
+    while True:
+        print("\nOptions:")
+        print("1: Start searching")
+        print("2: Exit Program")
+        choice = input("Enter your choice: ")
+        if choice == '1':
+            keyword = input("Enter the keyword to search for: ")
+            from_date = input("Enter the start date (YYYY-MM-DD): ")
+            to_date = input("Enter the end date (YYYY-MM-DD): ")
+            page_size = 50
+            articles = fetch_articles(api_key, keyword, from_date, to_date, page_size)
+
+            if articles:
+                article_bodies = [body for _, body in articles]
+                tfidf_keywords = tfidf(article_bodies)
+                print(f"TF-IDF Keywords for '{keyword}': {tfidf_keywords[0]}")  # Showing keywords for the first article for brevity
+                lda_topics = do_lda(article_bodies)
+                print(f"LDA Topics for '{keyword}': {lda_topics}")
+                rankings, average_sentiment = aggregate_rankings(articles, keyword)
+                plot_keyword_rankings_interactive(rankings, keyword)
+            else:
+                print(f"No articles fetched for '{keyword}' from {from_date} to {to_date}")
+
+        elif choice == '2':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
 
 
 if __name__ == "__main__":
