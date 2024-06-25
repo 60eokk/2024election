@@ -10,8 +10,6 @@ from bs4 import BeautifulSoup
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
 
-# thinkinf of putting keywords, date to user input 
-
 # Ensure NLTK resources are downloaded
 nltk.download('stopwords')
 
