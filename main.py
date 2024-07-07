@@ -108,8 +108,23 @@ def plot_keyword_rankings_interactive(rankings, keyword):
         print(f"No data to plot for '{keyword}'.")
 
 
-def main():
+# new functions I can implement from Goldman Sachs Open Source
+def macro_analysis(current_data):
+    # Use methods from 0000_macro_big_picture.ipynb
+    pass
 
+def analyze_portfolios(portfolio_data):
+    # Use methods from 0001_portfolios_and_var.ipynb
+    pass
+
+def trading_recommendations(market_data):
+    # Use methods from 0003_trades.ipynb
+    pass
+
+
+
+
+def main():
     api_key = '2ce72283-ccba-4b1a-92da-2f702366b61c'
     while True:
         print("\nOptions:")
