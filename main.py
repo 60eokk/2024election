@@ -28,6 +28,9 @@ from gs_quant.timeseries import percentiles
 warnings.filterwarnings('ignore')
 sns.set(style="darkgrid", color_codes=True)
 
+from gs_quant.session import GsSession
+GsSession.use(client_id=None, client_secret=None, scopes=('run_analytics',)) 
+
 
 
 # Ensure NLTK resources are downloaded
@@ -137,11 +140,11 @@ def analyze_portfolios(portfolio_data):
     # Use methods from 0001_portfolios_and_var.ipynb
     pass
 
-def trading_recommendations(market_data):
-    # Use methods from 0003_trades.ipynb
+def trade_data(start_date, end_date, symbols):
+    ## GS Session is currently not working
 
+# def analyze_trade_data(tradeData):
 
-    pass
 
 
 
