@@ -10,6 +10,26 @@ from bs4 import BeautifulSoup
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
 
+
+# GS Quant Neccessary Imports from Open Source
+# https://github.com/goldmansachs/gs-quant/blob/master/gs_quant/content/events/00_gsquant_meets_markets/00_us_election_analysis/0003_trades.ipynb
+import warnings
+from datetime import date
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+from gs_quant.datetime import business_day_offset
+from gs_quant.markets import PricingContext, BackToTheFuturePricingContext
+from gs_quant.risk import RollFwd, MarketDataPattern, MarketDataShock, MarketDataShockBasedScenario, MarketDataShockType
+from gs_quant.instrument import FXOption, IRSwaption
+from gs_quant.timeseries import *
+from gs_quant.timeseries import percentiles
+warnings.filterwarnings('ignore')
+sns.set(style="darkgrid", color_codes=True)
+
+
+
 # Ensure NLTK resources are downloaded
 nltk.download('stopwords')
 
@@ -119,6 +139,8 @@ def analyze_portfolios(portfolio_data):
 
 def trading_recommendations(market_data):
     # Use methods from 0003_trades.ipynb
+
+
     pass
 
 
