@@ -148,7 +148,7 @@ def main():
             keyword = input("Enter the keyword to search for: ")
             from_date = input("Enter the start date (YYYY-MM-DD): ")
             to_date = input("Enter the end date (YYYY-MM-DD): ")
-            page_size = float("inf")
+            page_size = 50
             articles = fetch_articles(api_key, keyword, from_date, to_date, page_size)
 
             if articles:
