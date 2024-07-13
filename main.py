@@ -13,23 +13,23 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 # GS Quant Neccessary Imports from Open Source
 # https://github.com/goldmansachs/gs-quant/blob/master/gs_quant/content/events/00_gsquant_meets_markets/00_us_election_analysis/0003_trades.ipynb
-import warnings
-from datetime import date
+# import warnings
+# from datetime import date
 
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
-from gs_quant.datetime import business_day_offset
-from gs_quant.markets import PricingContext, BackToTheFuturePricingContext
-from gs_quant.risk import RollFwd, MarketDataPattern, MarketDataShock, MarketDataShockBasedScenario, MarketDataShockType
-from gs_quant.instrument import FXOption, IRSwaption
-from gs_quant.timeseries import *
-from gs_quant.timeseries import percentiles
-warnings.filterwarnings('ignore')
-sns.set(style="darkgrid", color_codes=True)
+# import matplotlib.pyplot as plt
+# import pandas as pd
+# import seaborn as sns
+# from gs_quant.datetime import business_day_offset
+# from gs_quant.markets import PricingContext, BackToTheFuturePricingContext
+# from gs_quant.risk import RollFwd, MarketDataPattern, MarketDataShock, MarketDataShockBasedScenario, MarketDataShockType
+# from gs_quant.instrument import FXOption, IRSwaption
+# from gs_quant.timeseries import *
+# from gs_quant.timeseries import percentiles
+# warnings.filterwarnings('ignore')
+# sns.set(style="darkgrid", color_codes=True)
 
-from gs_quant.session import GsSession
-GsSession.use(client_id=None, client_secret=None, scopes=('run_analytics',)) 
+# from gs_quant.session import GsSession
+# GsSession.use(client_id=None, client_secret=None, scopes=('run_analytics',)) 
 
 
 
@@ -131,19 +131,7 @@ def plot_keyword_rankings_interactive(rankings, keyword):
         print(f"No data to plot for '{keyword}'.")
 
 
-# new functions I can implement from Goldman Sachs Open Source
-def macro_analysis(current_data):
-    # Use methods from 0000_macro_big_picture.ipynb
-    pass
 
-def analyze_portfolios(portfolio_data):
-    # Use methods from 0001_portfolios_and_var.ipynb
-    pass
-
-def trade_data(start_date, end_date, symbols):
-    ## GS Session is currently not working
-
-# def analyze_trade_data(tradeData):
 
 
 
@@ -160,7 +148,7 @@ def main():
             keyword = input("Enter the keyword to search for: ")
             from_date = input("Enter the start date (YYYY-MM-DD): ")
             to_date = input("Enter the end date (YYYY-MM-DD): ")
-            page_size = 50
+            page_size = float("inf")
             articles = fetch_articles(api_key, keyword, from_date, to_date, page_size)
 
             if articles:
@@ -183,3 +171,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+# NOT YET USED (FOR GSQUANT)
+# new functions I can implement from Goldman Sachs Open Source
+def macro_analysis(current_data):
+    # Use methods from 0000_macro_big_picture.ipynb
+    pass
+
+def analyze_portfolios(portfolio_data):
+    # Use methods from 0001_portfolios_and_var.ipynb
+    pass
+
+def trade_data(start_date, end_date, symbols):
+    ## GS Session is currently not working
+    pass
+
+def analyze_trade_data(tradeData):
+    pass
