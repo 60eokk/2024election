@@ -28,6 +28,12 @@ def fetch_articles(apikey, keyword, from_date, to_date, page_size):
         print("error")
 
 
+# can this be done without clean_html
+def clean_data():
+    pass
+
+
+
 def main():
     apikey = '2ce72283-ccba-4b1a-92da-2f702366b61c'
 
