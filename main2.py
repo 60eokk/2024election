@@ -3,6 +3,7 @@
 
 import requests
 # from theguardian import theguardian_content
+from bs4 import BeautifulSoup
 
 
 
@@ -29,8 +30,9 @@ def fetch_articles(apikey, keyword, from_date, to_date, page_size):
 
 
 # can this be done without clean_html
-def clean_data():
-    pass
+def clean_data(raw_html):
+    soup = BeautifulSoup(raw_html, 'html.parser')
+    return soup.get_text()
 
 
 
@@ -40,6 +42,7 @@ def main():
     # test case
     keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
     fetch_articles(apikey, keyword, from_date, to_date, page_size)
+    clean_data(fetch_articles)
 
 
 if __name__ == "__main__":
