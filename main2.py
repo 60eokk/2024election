@@ -42,9 +42,19 @@ def main():
 
     # test case
     keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
-    example_articles = fetch_articles(apikey, keyword, from_date, to_date, page_size)
-    print(example_articles)
+    articles = fetch_articles(apikey, keyword, from_date, to_date, page_size)
+    # print(example_articles)
     # clean_data(fetch_articles)
+
+    for article in articles:
+        print(f"Title: {article['webTitle']}")
+        print(f"Date: {article['webPublicationDate']}")
+
+        if 'fields':
+            clean_body = clean_data(article['fields']['body'])
+            print(f"Cleaned: \n{clean_body}")
+    else:
+        print("No content")
 
 
 if __name__ == "__main__":
