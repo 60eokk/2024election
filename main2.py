@@ -24,9 +24,10 @@ def fetch_articles(apikey, keyword, from_date, to_date, page_size):
     response = requests.get(url, params = params)
 
     if response.status_code == 200:
-        print(response.json())
+        # response.json converts API response from json to dictionary
+        return response.json()['response']['results'] 
     else:
-        print("error")
+        return {response.status_code} # professional approach on errors
 
 
 # can this be done without clean_html
@@ -41,8 +42,9 @@ def main():
 
     # test case
     keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
-    fetch_articles(apikey, keyword, from_date, to_date, page_size)
-    clean_data(fetch_articles)
+    example_articles = fetch_articles(apikey, keyword, from_date, to_date, page_size)
+    print(example_articles)
+    # clean_data(fetch_articles)
 
 
 if __name__ == "__main__":
