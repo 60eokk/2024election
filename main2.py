@@ -33,7 +33,16 @@ def fetch_articles(apikey, keyword, from_date, to_date, page_size):
 # can this be done without clean_html
 def clean_data(raw_html):
     soup = BeautifulSoup(raw_html, 'html.parser')
-    return soup.get_text()
+
+    for script in soup(['script','style']):
+        script.decompose() # getting rid of script, style components (ex. default, html)
+    
+    text = soup.get_text()
+
+    words = text.split()
+    text = ''.join(words)
+
+    return text
 
 
 
