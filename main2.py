@@ -3,7 +3,10 @@
 
 import requests
 # from theguardian import theguardian_content
-from bs4 import BeautifulSoup
+from bs4 import BeautifulStoneSoup
+from transformers import pipeline, AutoTokenizer
+
+
 
 
 
@@ -49,6 +52,8 @@ def clean_data(raw_html):
 # 3. use nlp models to extract features (sentiment scores, etc)
 # text processing: tokenization(implementation HuggingFace?), stopword, keyword, sentiment analysis
 # Advanced NLP library: spaCy, TF-DIF, LDA, word embedding(Word2Vec, gloVe)
+# Implementing Huggingface's Transformers library. 
+# Would it be possible for fine-tuning in this project?
 
 
 
