@@ -3,8 +3,12 @@
 
 import requests
 # from theguardian import theguardian_content
-from bs4 import BeautifulStoneSoup
-from transformers import pipeline, AutoTokenizer
+from bs4 import BeautifulSoup
+# pipeline for high level API in library (for pretrained models, NLP tasks)
+# AutoTokenizaer for loading correct tokenizer for for given pretrained model (raw text to format that model can understand)
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
+# import torch
+
 
 
 
@@ -54,6 +58,7 @@ def clean_data(raw_html):
 # Advanced NLP library: spaCy, TF-DIF, LDA, word embedding(Word2Vec, gloVe)
 # Implementing Huggingface's Transformers library. 
 # Would it be possible for fine-tuning in this project?
+
 
 
 
