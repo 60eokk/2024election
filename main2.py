@@ -53,8 +53,10 @@ def main():
         if 'fields':
             clean_body = clean_data(article['fields']['body'])
             print(f"Cleaned: \n{clean_body}")
-    else:
-        print("No content")
+        else:
+            print("No content")
+
+        print("\n----------\n")
 
 
 if __name__ == "__main__":
