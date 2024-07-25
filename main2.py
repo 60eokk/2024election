@@ -29,8 +29,8 @@ def fetch_articles(apikey, keyword, from_date, to_date, page_size):
     else:
         return {response.status_code} # professional approach on errors
 
-
-# can this be done without clean_html
+# 2. data processing (clean, process data)
+# can this be done without clean_html. yes!
 def clean_data(raw_html):
     soup = BeautifulSoup(raw_html, 'html.parser')
 
@@ -40,9 +40,16 @@ def clean_data(raw_html):
     text = soup.get_text()
 
     words = text.split()
-    text = ''.join(words)
+    text = ' '.join(words)
 
     return text
+
+
+
+# 3. use nlp models to extract features (sentiment scores, etc)
+# text processing: tokenization(implementation HuggingFace?), stopword, keyword, sentiment analysis
+# Advanced NLP library: spaCy, TF-DIF, LDA, word embedding(Word2Vec, gloVe)
+
 
 
 
@@ -71,12 +78,11 @@ def main():
 if __name__ == "__main__":
     main()
 
-#
 
 
 
 
-# 2. data processing (clean, process data)
-# 3. use nlp models to extract features (sentiment scores, etc)
+
+
 # 4. model training 
 # 5. prediction
