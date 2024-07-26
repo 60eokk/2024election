@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # pipeline for high level API in library (for pretrained models, NLP tasks)
 # AutoTokenizaer for loading correct tokenizer for for given pretrained model (raw text to format that model can understand)
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
-# import torch
+import torch
 
 
 
@@ -58,6 +58,9 @@ def clean_data(raw_html):
 # Advanced NLP library: spaCy, TF-DIF, LDA, word embedding(Word2Vec, gloVe)
 # Implementing Huggingface's Transformers library. 
 # Would it be possible for fine-tuning in this project?
+def sentiment_analysis(text, sentiment_pipeline):
+    result = sentiment_pipeline(text[:512])[0] # 512 tokens due to model constraint
+    return result['label'], result['score']
 
 
 
@@ -65,6 +68,9 @@ def clean_data(raw_html):
 
 def main():
     apikey = '2ce72283-ccba-4b1a-92da-2f702366b61c'
+
+    # Load pre-trained models
+    sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
     # test case
     keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
@@ -79,6 +85,12 @@ def main():
         if 'fields':
             clean_body = clean_data(article['fields']['body'])
             print(f"Cleaned: \n{clean_body}")
+
+        # Sentiment Analysis
+            sentiment, confidence = sentiment_analysis(clean_body, sentiment_pipeline)
+            print(f"\nSentiment: {sentiment}")
+            print(f"Confidence: {confidence:.4f}")
+
         else:
             print("No content")
 
