@@ -62,8 +62,10 @@ def sentiment_analysis(text, sentiment_pipeline):
     result = sentiment_pipeline(text[:512])[0] # 512 tokens due to model constraint
     return result['label'], result['score']
 
-
-
+# Checking out a feature
+def text_summarization(text, summarizer_pipeline):
+    summary = summarizer_pipeline()[0]['summary_text']
+    return summary
 
 
 def main():
@@ -71,6 +73,7 @@ def main():
 
     # Load pre-trained models
     sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
+    summarizer_pipeline = pipeline("summarization", model="facebook/bart-large-cnn")
 
     # test case
     keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
@@ -90,6 +93,9 @@ def main():
             sentiment, confidence = sentiment_analysis(clean_body, sentiment_pipeline)
             print(f"\nSentiment: {sentiment}")
             print(f"Confidence: {confidence:.4f}")
+
+            summary = text_summarization(clean_body, summarizer_pipeline)
+            print(f"\nSummary: {summary}")
 
         else:
             print("No content")
