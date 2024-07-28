@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 # AutoTokenizaer for loading correct tokenizer for for given pretrained model (raw text to format that model can understand)
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 import torch
-
+import sqlite3
 
 
 
@@ -67,6 +67,24 @@ def text_summarization(text, summarizer_pipeline):
     summary = summarizer_pipeline(text)[0]['summary_text']
     return summary
 
+
+# SQL commands
+def to_sqlite(articles):
+    conn = sqlite3.connect('articles.db')
+    c = conn.cursor()
+    
+    for article in articles:
+        article_id = article['id']
+        title = article['webTitle']
+        date = article['webPublicationDate']
+        if 'fields':
+            content = article['fields']['body']
+        else:
+            content = ''
+
+        conn.commit()
+        conn.close()
+        
 
 def main():
     apikey = '2ce72283-ccba-4b1a-92da-2f702366b61c'
