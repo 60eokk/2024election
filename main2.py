@@ -64,7 +64,7 @@ def sentiment_analysis(text, sentiment_pipeline):
 
 # Checking out a feature
 def text_summarization(text, summarizer_pipeline):
-    summary = summarizer_pipeline()[0]['summary_text']
+    summary = summarizer_pipeline(text)[0]['summary_text']
     return summary
 
 
@@ -97,16 +97,14 @@ def main():
             summary = text_summarization(clean_body, summarizer_pipeline)
             print(f"\nSummary: {summary}")
 
-        else:
+        else: 
             print("No content")
 
         print("\n----------\n")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     main()
-
-
 
 
 
