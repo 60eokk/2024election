@@ -120,6 +120,11 @@ def main():
     df = pd.read_sql_query("SELECT * FROM articles", conn)
     conn.close()
 
+    df.to_csv('articles.csv', index=False)
+
+    #SQL results
+    print("SQL Results:")
+    print(df)
 
 
     for article in articles:
