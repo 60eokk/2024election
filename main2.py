@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import sqlite3
+import pandas as pd
 
 
 
@@ -67,6 +68,15 @@ def text_summarization(text, summarizer_pipeline):
     summary = summarizer_pipeline(text)[0]['summary_text']
     return summary
 
+def create_table():
+    conn = sqlite3.connect('articles.db')
+    c = conn.cursor()
+    
+    c.execute('''CREATE TABLE IF NOT EXISTS articles
+                 (id TEXT PRIMARY KEY, title TEXT, date TEXT, content TEXT)''')
+    conn.commit()
+    conn.close()
+
 
 # SQL commands
 def to_sqlite(articles):
@@ -82,9 +92,11 @@ def to_sqlite(articles):
         else:
             content = ''
 
+        c.execute("INSERT OR IGNORE INTO articles (id, title, date, content) VALUES (?,?,?,?)", (article_id, title, date, content))
+
         conn.commit()
         conn.close()
-        
+
 
 def main():
     apikey = '2ce72283-ccba-4b1a-92da-2f702366b61c'
@@ -98,6 +110,15 @@ def main():
     articles = fetch_articles(apikey, keyword, from_date, to_date, page_size)
     # print(example_articles)
     # clean_data(fetch_articles)
+    
+    # Save db so that SQL can be used
+    to_sqlite(articles)
+    
+    conn = sqlite3.connect('articles.db')
+    df = pd.read_sql_query("SELECT * FROM articles", conn)
+    conn.close()
+
+
 
     for article in articles:
         print(f"Title: {article['webTitle']}")
