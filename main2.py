@@ -94,8 +94,8 @@ def to_sqlite(articles):
 
         c.execute("INSERT OR IGNORE INTO articles (id, title, date, content) VALUES (?,?,?,?)", (article_id, title, date, content))
 
-        conn.commit()
-        conn.close()
+    conn.commit()
+    conn.close()
 
 
 def main():
@@ -104,6 +104,8 @@ def main():
     # Load pre-trained models
     sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
     summarizer_pipeline = pipeline("summarization", model="facebook/bart-large-cnn")
+
+    create_table()
 
     # test case
     keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
