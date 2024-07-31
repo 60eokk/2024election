@@ -11,6 +11,11 @@ import torch
 import sqlite3
 import pandas as pd
 
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+
 
 
 
@@ -126,6 +131,38 @@ def main():
     print("SQL Results:")
     print(df)
 
+        # Clean the content data
+    df['clean_content'] = df['content'].apply(clean_data)
+
+    # Get sentiment labels for training
+    df['sentiment'], df['sentiment_score'] = zip(*df['clean_content'].apply(lambda x: sentiment_analysis(x, sentiment_pipeline)))
+
+    # Convert sentiment labels to binary labels (positive/negative)
+    df['sentiment_label'] = df['sentiment'].apply(lambda x: 1 if x == 'POSITIVE' else 0)
+
+    # Split the data
+    X_train, X_test, y_train, y_test = train_test_split(df['clean_content'], df['sentiment_label'], test_size=0.2, random_state=42)
+
+    # Vectorize the text data
+    vectorizer = TfidfVectorizer(max_features=5000)
+    X_train_vec = vectorizer.fit_transform(X_train)
+    X_test_vec = vectorizer.transform(X_test)
+
+    # Train a logistic regression model
+    model = LogisticRegression()
+    model.fit(X_train_vec, y_train)
+
+    # Make predictions
+    y_pred = model.predict(X_test_vec)
+
+    # Evaluate the model
+    accuracy = accuracy_score(y_test, y_pred)
+    report = classification_report(y_test, y_pred)
+
+    print(f"Model Accuracy: {accuracy}")
+    print("Classification Report:")
+    print(report)
+
 
     for article in articles:
         print(f"Title: {article['webTitle']}")
@@ -151,7 +188,6 @@ def main():
 
 if __name__ == "__main__": 
     main()
-
 
 
 
