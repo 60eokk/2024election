@@ -113,7 +113,7 @@ def main():
     create_table()
 
     # test case
-    keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '2'
+    keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '10'
     articles = fetch_articles(apikey, keyword, from_date, to_date, page_size)
     # print(example_articles)
     # clean_data(fetch_articles)
