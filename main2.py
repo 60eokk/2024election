@@ -65,8 +65,20 @@ def clean_data(raw_html):
 # Implementing Huggingface's Transformers library. 
 # Would it be possible for fine-tuning in this project?
 def sentiment_analysis(text, sentiment_pipeline):
-    result = sentiment_pipeline(text[:512])[0] # 512 tokens due to model constraint
+    if len(text) > 512:
+        text = text[:512]   # 512 tokens due to model constraint
+    result = sentiment_pipeline(text)[0] 
     return result['label'], result['score']
+
+def cut_text(text, max_length=1024):
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), max_length):
+        chunk = ' '.join(words[i:i+max_length])
+        chunks.append(chunk)
+    
+    return chunks
+
 
 # Checking out a feature
 def text_summarization(text, summarizer_pipeline):
@@ -113,7 +125,7 @@ def main():
     create_table()
 
     # test case
-    keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '10'
+    keyword, from_date, to_date, page_size = "Trump", '2020-01-01', '2020-12-31', '3'
     articles = fetch_articles(apikey, keyword, from_date, to_date, page_size)
     # print(example_articles)
     # clean_data(fetch_articles)
