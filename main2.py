@@ -70,7 +70,7 @@ def sentiment_analysis(text, sentiment_pipeline):
     result = sentiment_pipeline(text)[0] 
     return result['label'], result['score']
 
-def cut_text(text, max_length=1024):
+def cut_chunk(text, max_length=1024):
     words = text.split()
     chunks = []
     for i in range(0, len(words), max_length):
@@ -81,9 +81,19 @@ def cut_text(text, max_length=1024):
 
 
 # Checking out a feature
-def text_summarization(text, summarizer_pipeline):
-    summary = summarizer_pipeline(text)[0]['summary_text']
-    return summary
+def text_summarization(text, summarizer_pipeline, max_length=1024):
+    chunks = cut_chunk(text, max_length)
+    summaries = []
+
+    for chunk in chunks:
+        if chunk.strip():
+            summary = summarizer_pipeline(chunk)[0]['summary_text']
+            summaries.append(summary)
+    
+    combined_summary = " ".join(summaries)
+    return combined_summary
+    
+
 
 def create_table():
     conn = sqlite3.connect('articles.db')
